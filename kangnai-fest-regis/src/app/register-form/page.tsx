@@ -1,4 +1,5 @@
 "use client";
+import { ProceedingButton } from "@/components/ProceedingButton";
 import { FormRegisData } from '@/types/formData'
 import axios from 'axios'
 import Link from 'next/link'
@@ -35,10 +36,10 @@ const index = (props: Props) => {
         <div>
             register form
             <Link href={'/emotional-check'}>
-                <button onClick={onSubmitRegisForm}>next</button>
+            <ProceedingButton buttonText={`ลงทะเบียนเข้างาน`} />
             </Link>
         </div>
     )
 }
 
-export default index
+export default index;

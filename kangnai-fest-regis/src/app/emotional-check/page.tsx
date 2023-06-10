@@ -1,17 +1,17 @@
-import Link from 'next/link'
-import React from 'react'
+import Link from "next/link";
+import React from "react";
 
-type Props = {}
+type Props = {};
 
 const index = (props: Props) => {
-    return (
-        <div>
-            emotional check
-            <Link href={'/feeling-card'}>
-                <button>next</button>
-            </Link>
-        </div>
-    )
-}
+  return (
+    <div>
+      emotional check
+      <Link href={"/feeling-card"}>
+        <button>next</button>
+      </Link>
+    </div>
+  );
+};
 
-export default index
+export default index;
