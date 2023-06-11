@@ -1,0 +1,90 @@
+* {
+  margin: 0;
+}
+
+.home-container {
+  background-color: #bae4ec;
+  position: absolute;
+  width: 428px;
+  height: 926px;
+  /* position: fixed; */
+}
+
+.body-container {
+  color: #4b9199;
+  filter: drop-shadow(1px 1px 3px rgba(0, 0, 0, 0.15));
+  font-style: normal;
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 51px;
+  text-align: center;
+
+  margin-bottom: 20px;
+  /* position: absolute; */
+  align-items: center;
+  top: 620px;
+  margin-left: 80px;
+  position: fixed;
+}
+
+.body-container h2 {
+  line-height: 20px;
+}
+
+#festLogo {
+  position: fixed;
+  /* position: absolute; */
+  top: 40px;
+  /* bottom: 402px; */
+  align-items: center;
+  width: 428px;
+  height: auto;
+}
+
+#grad-blue {
+  /* position: absolute; */
+  position: fixed;
+  top: -8px;
+  background: linear-gradient(180deg, #99d9ea 0%, rgba(153, 217, 234, 0) 100%);
+}
+
+#grad-yellow {
+  position: absolute;
+  top: 380px;
+  background: linear-gradient(0deg, #efdda1 0%, rgba(239, 221, 161, 0) 100%);
+}
+
+#bg-blue {
+  position: absolute;
+  /* position: fixed; */
+  top: 370px;
+  width: 428px;
+  /* height: auto; */
+  /* bottom: 0px; */
+}
+
+.btn-container {
+  /* position: absolute; */
+  position: fixed;
+  align-items: center;
+  top: 725px;
+  /* bottom: 129px; */
+}
+
+.foot-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  padding: 0px;
+  gap: 16px;
+  /* position: absolute; */
+  position: fixed;
+  align-items: center;
+  left: 120px;
+  top: 810px;
+}
+
+.foot-container li {
+  list-style: none;
+}

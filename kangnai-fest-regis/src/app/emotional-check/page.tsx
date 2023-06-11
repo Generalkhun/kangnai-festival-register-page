@@ -1,3 +1,4 @@
+import { ProceedingButton } from "@/components/ProceedingButton";
 import Link from "next/link";
 import React from "react";
 
@@ -8,7 +9,7 @@ const index = (props: Props) => {
     <div>
       emotional check
       <Link href={"/feeling-card"}>
-        <button>next</button>
+        <ProceedingButton buttonText={`ต่อไป`} />
       </Link>
     </div>
   );
