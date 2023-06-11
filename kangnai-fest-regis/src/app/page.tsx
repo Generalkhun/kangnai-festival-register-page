@@ -2,6 +2,9 @@ import Image from "next/image";
 import Link from "next/link";
 import "./page.css";
 import { ProceedingButton } from "@/components/ProceedingButton";
+import { regisBtnText } from "../constants";
+import { headText1 } from "../constants";
+import { headText2 } from "../constants";
 
 import festLogo from "/public/img/LOGO.png";
 import gradBlue from "/public/img/gradient-blue.png";
@@ -14,6 +17,7 @@ import human from "/public/img/human.png";
 import cloud1 from "/public/img/cloud1.png";
 import cloud2 from "/public/img/cloud2.png";
 import breeze from "/public/img/breeze.png";
+import line from "/public/img/เส้นคั่น.png";
 
 export default function Home() {
   return (
@@ -29,19 +33,23 @@ export default function Home() {
         <Image id="breeze" src={breeze} alt="breeze"></Image>
 
         <div className="body-container">
-          <h3>พาตัวและใจกลับมาข้างในเพื่อ</h3>
-          <h2>โอบกอดความพังในใจเรา</h2>
+          <h3>{headText1}</h3>
+          <h2>{headText2}</h2>
         </div>
         <Link href={"/register-form"} className="btn-container">
-          <ProceedingButton buttonText={`ลงทะเบียนเข้างาน `} />
+          <ProceedingButton buttonText={regisBtnText} />
         </Link>
         <ul className="foot-container">
           <li className="list-spon1">
             <Image src={spon1} alt="spon1" />
           </li>
+          <Image src={line} alt="line" />
+
           <li className="list-spon2">
             <Image src={spon2} alt="spon2" />
           </li>
+          <Image src={line} alt="line" />
+
           <li className="list-spon3">
             <Image src={spon3} alt="spon3" />
           </li>

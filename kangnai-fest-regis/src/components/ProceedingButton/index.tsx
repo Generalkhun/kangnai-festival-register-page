@@ -5,5 +5,5 @@ type Props = {
   buttonText: string;
 };
 export const ProceedingButton = ({ buttonText }: Props) => {
-  return <button className="btn">{buttonText} &rarr;</button>;
+  return <button className="btn">{buttonText} </button>;
 };
