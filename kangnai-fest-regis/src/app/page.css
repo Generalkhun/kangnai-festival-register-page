@@ -4,10 +4,10 @@
 
 .home-container {
   background-color: #bae4ec;
-  position: absolute;
+  /* position: absolute; */
   width: 428px;
   height: 926px;
-  /* position: fixed; */
+  position: fixed;
 }
 
 .body-container {
@@ -44,23 +44,45 @@
 #grad-blue {
   /* position: absolute; */
   position: fixed;
-  top: -8px;
+  top: 0px;
   background: linear-gradient(180deg, #99d9ea 0%, rgba(153, 217, 234, 0) 100%);
 }
 
 #grad-yellow {
   position: absolute;
   top: 380px;
-  background: linear-gradient(0deg, #efdda1 0%, rgba(239, 221, 161, 0) 100%);
+  background: linear-gradient(0deg, #efdda1 40%, rgba(239, 221, 161, 0) 100%);
 }
 
 #bg-blue {
-  position: absolute;
-  /* position: fixed; */
+  /* position: absolute; */
+  position: fixed;
   top: 370px;
   width: 428px;
-  /* height: auto; */
-  /* bottom: 0px; */
+}
+
+#human {
+  /* position: absolute; */
+  position: fixed;
+  top: 405px;
+  left: 165px;
+}
+
+#cloud1 {
+  position: absolute;
+  top: 4px;
+}
+
+#cloud2 {
+  position: absolute;
+  right: 0;
+  top: 300px;
+}
+
+#breeze {
+  position: absolute;
+  right: 0;
+  top: 35px;
 }
 
 .btn-container {
