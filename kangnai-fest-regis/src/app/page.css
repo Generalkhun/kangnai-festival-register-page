@@ -1,76 +1,78 @@
+@import url("https://fonts.googleapis.com/css2?family=Athiti:wght@400;500;600&display=swap");
+
 * {
   margin: 0;
 }
 
 .home-container {
-  background-color: #bae4ec;
-  /* position: absolute; */
+  background-color: #d2eef2;
+  position: absolute;
   width: 428px;
   height: 926px;
-  position: fixed;
+  /* position: fixed; */
 }
 
 .body-container {
   color: #4b9199;
-  filter: drop-shadow(1px 1px 3px rgba(0, 0, 0, 0.15));
+  /* filter: drop-shadow(1px 1px 3px rgba(0, 0, 0, 0.15)); */
   font-style: normal;
-  font-weight: 600;
-  font-size: 18px;
   line-height: 51px;
   text-align: center;
-
   margin-bottom: 20px;
   /* position: absolute; */
   align-items: center;
-  top: 620px;
-  margin-left: 80px;
+  top: 585px;
+  margin-left: 60px;
   position: fixed;
 }
 
 .body-container h2 {
   line-height: 20px;
+  font-size: 32px;
+  font-weight: 500;
+}
+
+.body-container h3 {
+  font-size: 24px;
+  font-weight: 500;
 }
 
 #festLogo {
   position: fixed;
   /* position: absolute; */
-  top: 40px;
+  top: 49px;
   /* bottom: 402px; */
   align-items: center;
-  width: 428px;
-  height: auto;
+  height: 450px;
+  width: auto;
 }
 
 #grad-blue {
-  /* position: absolute; */
-  position: fixed;
-  top: 0px;
-  background: linear-gradient(180deg, #99d9ea 0%, rgba(153, 217, 234, 0) 100%);
-}
-
-#grad-yellow {
   position: absolute;
-  top: 380px;
-  background: linear-gradient(0deg, #efdda1 40%, rgba(239, 221, 161, 0) 100%);
+  /* position: fixed; */
+  top: 0px;
+  background: linear-gradient(180deg, #b7eaf1 0%, #d2eef2 100%);
 }
 
-#bg-blue {
+#bg-white {
   /* position: absolute; */
   position: fixed;
-  top: 370px;
+  top: 350px;
   width: 428px;
 }
 
 #human {
   /* position: absolute; */
   position: fixed;
-  top: 405px;
+  top: 386px;
   left: 165px;
 }
 
 #cloud1 {
   position: absolute;
-  top: 4px;
+  top: 25px;
+  width: auto;
+  height: 118px;
 }
 
 #cloud2 {
@@ -82,15 +84,15 @@
 #breeze {
   position: absolute;
   right: 0;
-  top: 35px;
+  top: 62.44px;
 }
 
 .btn-container {
   /* position: absolute; */
   position: fixed;
   align-items: center;
-  top: 725px;
-  /* bottom: 129px; */
+  top: 700px;
+  left: 6px;
 }
 
 .foot-container {
