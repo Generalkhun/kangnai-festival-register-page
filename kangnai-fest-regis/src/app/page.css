@@ -7,23 +7,22 @@
 .home-container {
   background-color: #d2eef2;
   position: absolute;
-  width: 428px;
-  height: 926px;
-  /* position: fixed; */
+  width: 100%;
+  min-width: 428px;
+  height: 100%;
+  min-height: 926px;
+  align-items: center;
 }
 
 .body-container {
   color: #4b9199;
-  /* filter: drop-shadow(1px 1px 3px rgba(0, 0, 0, 0.15)); */
   font-style: normal;
   line-height: 51px;
   text-align: center;
   margin-bottom: 20px;
-  /* position: absolute; */
-  align-items: center;
+  position: absolute;
   top: 585px;
   left: 60px;
-  position: fixed;
 }
 
 .body-container h2 {
@@ -39,9 +38,8 @@
 
 #festLogo {
   position: fixed;
-  /* position: absolute; */
+  position: absolute;
   top: 49px;
-  /* bottom: 402px; */
   align-items: center;
   height: 450px;
   width: auto;
@@ -49,21 +47,18 @@
 
 #grad-blue {
   position: absolute;
-  /* position: fixed; */
   top: 0px;
   background: linear-gradient(180deg, #b7eaf1 0%, #d2eef2 100%);
 }
 
 #bg-white {
-  /* position: absolute; */
-  position: fixed;
+  position: absolute;
   top: 350px;
   width: 428px;
 }
 
 #human {
-  /* position: absolute; */
-  position: fixed;
+  position: absolute;
   top: 386px;
   left: 165px;
 }
@@ -94,8 +89,7 @@
 }
 
 .btn-container {
-  /* position: absolute; */
-  position: fixed;
+  position: absolute;
   align-items: center;
   top: 685px;
 }
@@ -107,8 +101,7 @@
   align-items: center;
   padding: 0px;
   gap: 16px;
-  /* position: absolute; */
-  position: fixed;
+  position: absolute;
   align-items: center;
   left: 100px;
   top: 825px;

@@ -1,5 +1,6 @@
 import Link from "next/link";
 import React from "react";
+import Image from "next/image";
 
 import { ProceedingButton } from "@/components/ProceedingButton";
 import { introBtnText } from "@/constants";
@@ -11,14 +12,11 @@ type Props = {};
 const index = (props: Props) => {
   return (
     <div>
-      <div className="regis-container">
-        <div className="head-container">
-          {/* <image src={introHead} alt="Introduce Head" /> */}
-
-          <Link href={"/emotional-check"}>
-            <ProceedingButton buttonText={introBtnText} />
-          </Link>
-        </div>
+      <div className="head-container">
+        <Image src={introHead} alt="introduce head" />
+        <Link href={"/emotional-check"}>
+          <ProceedingButton buttonText={introBtnText} />
+        </Link>
       </div>
     </div>
   );
