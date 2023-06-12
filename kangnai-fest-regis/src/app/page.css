@@ -22,7 +22,7 @@
   /* position: absolute; */
   align-items: center;
   top: 585px;
-  margin-left: 60px;
+  left: 60px;
   position: fixed;
 }
 
@@ -87,12 +87,17 @@
   top: 62.44px;
 }
 
+#birds {
+  position: absolute;
+  left: 340px;
+  top: 171px;
+}
+
 .btn-container {
   /* position: absolute; */
   position: fixed;
   align-items: center;
-  top: 700px;
-  left: 6px;
+  top: 685px;
 }
 
 .foot-container {
@@ -106,9 +111,16 @@
   position: fixed;
   align-items: center;
   left: 100px;
-  top: 810px;
+  top: 825px;
 }
 
 .foot-container li {
   list-style: none;
+}
+
+.list-spon1,
+.list-spon2,
+.list-spon3 {
+  width: 48px;
+  height: 48px;
 }
