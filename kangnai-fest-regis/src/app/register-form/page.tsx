@@ -1,5 +1,6 @@
 "use client";
-import { ProceedingButton } from "@/components/ProceedingButton";
+
+import { ProceedingButton } from '@/components/Button';
 import { FormRegisData } from '@/types/formData'
 import axios from 'axios'
 import Link from 'next/link'

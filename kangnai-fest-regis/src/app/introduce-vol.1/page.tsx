@@ -10,7 +10,6 @@ import { introText1 } from "@/constants";
 import { introText2 } from "@/constants";
 
 //-------------------image-----------------------//
-import gradBlue from "/public/img/gradient-blue2.png";
 import introHead from "/public/img/intro-head.png";
 import vol1 from "/public/img/vol1.png";
 import bg02 from "/public/img/BG02.png";
