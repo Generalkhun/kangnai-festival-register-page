@@ -5,7 +5,8 @@ a {
   text-decoration: none;
 }
 
-.proceeding_btn {
+.proceeding_btn,
+.next_btn {
   color: #ffffff;
   text-decoration: none;
   font-style: normal;
@@ -27,7 +28,7 @@ a {
   box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.15);
   border-radius: 70px;
   border-style: none;
-  margin-left: 60px;
+  margin-left: 67px;
 }
 
 .walkin_btn {
@@ -53,6 +54,6 @@ a {
   border-color: #6ebec7;
   border-style: double;
   border-width: 1px;
-  margin-left: 60px;
+  margin-left: 67px;
   margin-top: 16px;
 }
