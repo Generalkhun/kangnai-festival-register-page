@@ -17,9 +17,9 @@ import breeze from "/public/img/breeze.svg";
 import cloud1 from "/public/img/cloud1.svg";
 import cloud2 from "/public/img/cloud2.svg";
 import line from "/public/img/เส้นคั่น.svg";
-import spon1 from "/public/img/s.svg";
-import spon2 from "/public/img/breeze.svg";
-import spon3 from "/public/img/breeze.svg";
+import spon1 from "/public/img/spon1.svg";
+import spon2 from "/public/img/spon2.svg";
+import spon3 from "/public/img/spon3.svg";
 //----------------------------------------------//
 
 export default function Home() {
@@ -48,17 +48,17 @@ export default function Home() {
         </div>
         <ul className="foot-container">
           <li className="list-spon1">
-            <Image src={} alt="spon1" />
+            <Image src={spon1} alt="spon1" />
           </li>
           <Image src={line} alt="line" />
 
           <li className="list-spon2">
-            <Image src={} alt="spon2" />
+            <Image src={spon2} alt="spon2" />
           </li>
           <Image src={line} alt="line" />
 
           <li className="list-spon3">
-            <Image src={} alt="spon3" />
+            <Image src={spon3} alt="spon3" />
           </li>
         </ul>
       </div>
