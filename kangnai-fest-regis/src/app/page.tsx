@@ -1,8 +1,8 @@
 import Image from "next/image";
 import Link from "next/link";
 import "./page.css";
-import { ProceedingButton } from "@/components/Button";
-import { WalkInButton } from "@/components/Button";
+import { ProceedingButton } from "@/components/Button/button";
+import { WalkInButton } from "@/components/Button/button";
 import { regisBtnText } from "../constants";
 import { walkInBtnText } from "../constants";
 import { headText1 } from "../constants";

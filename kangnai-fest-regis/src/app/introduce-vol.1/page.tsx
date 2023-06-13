@@ -3,7 +3,7 @@ import React from "react";
 import Image from "next/image";
 import "./page.css";
 
-import { NextButton } from "@/components/Button";
+import { NextButton } from "@/components/Button/button";
 
 import { introBtnText } from "@/constants";
 import { introText1 } from "@/constants";
@@ -32,7 +32,7 @@ const index = (props: Props) => {
           <h3>{introText2}</h3>
         </div>
         <div className="nextBtn-container">
-          <Link href={"/emotional-check"}>
+          <Link href={"/feeling-level"}>
             <NextButton buttonText={introBtnText} />
             <Image id="arrow" src={arrow} alt="arrow" />
           </Link>

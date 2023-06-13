@@ -1,5 +1,4 @@
-"use client"
-import { ProceedingButton } from "@/components/Button";
+import { ProceedingButton } from "@/components/Button/button";
 import Link from "next/link";
 import React, { useCallback, useEffect, useState } from "react";
 import Image from "next/image";
