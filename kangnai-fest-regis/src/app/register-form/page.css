@@ -11,6 +11,20 @@
   align-items: center;
 }
 
+.text-container {
+  position: absolute;
+  top: 160px;
+  left: 130.5px;
+}
+
+.text-container h2 {
+  color: #4b9199;
+  font-size: 40px;
+  font-weight: 600;
+  line-height: 64px;
+  text-align: center;
+}
+
 #bg01 {
   position: absolute;
   top: 0;
@@ -18,6 +32,8 @@
 
 #miniLogo {
   position: absolute;
+  top: 7px;
+  left: 115px;
 }
 
 .nextBtn-container {

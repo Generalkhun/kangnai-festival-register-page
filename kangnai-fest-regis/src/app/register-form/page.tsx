@@ -1,7 +1,7 @@
 "use client";
 
 import { NextButton } from "@/components/Button";
-import { nextBtnText } from "@/constants";
+import { headRegis, nextBtnText } from "@/constants";
 
 import bg01 from "/public/img/bg01.svg";
 import arrow from "/public/img/arrow.svg";
@@ -13,6 +13,7 @@ import Link from "next/link";
 import Image from "next/image";
 import React, { useState } from "react";
 import "./page.css";
+import RegisForm from "@/components/Form";
 
 type Props = {};
 
@@ -43,14 +44,19 @@ const index = (props: Props) => {
   //             console.log(err.message);
   //         });
   // }
+
   return (
     <div>
       <div className="regis-container">
         <Image id="bg01" src={bg01} alt="bg-01" />
         <Image id="miniLogo" src={miniLogo} alt="mini logo" />
 
-        <div className="form-container"></div>
-
+        <div className="text-container">
+          <h2>{headRegis}</h2>
+        </div>
+        <div className="form-container">
+          <RegisForm />
+        </div>
         <div className="nextBtn-container">
           <Link href={"/emotional-check"}>
             <NextButton buttonText={nextBtnText} />
