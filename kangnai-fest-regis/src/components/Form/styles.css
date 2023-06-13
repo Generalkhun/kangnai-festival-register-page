@@ -7,6 +7,14 @@
   font-weight: 600;
 }
 
+select {
+  padding: 2px 2px 2px 2px;
+  border: none;
+  background-image: url("http://cdn1.iconfinder.com/data/icons/cc_mono_icon_set/blacks/16x16/br_down.png");
+  background-position: right center;
+  background-repeat: no-repeat;
+}
+
 #form_age {
   color: #838aa3;
 
@@ -19,6 +27,7 @@
   align-items: center;
 
   padding: 16px 20px;
+  margin-bottom: 16px;
   gap: 8px;
   border-radius: 8px;
   border-style: none;
@@ -26,5 +35,43 @@
 }
 
 #age_num {
+  font-size: 16px;
+}
+
+#form_how {
+  color: #838aa3;
+
+  width: 348px;
+  height: 56px;
+
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+
+  margin-bottom: 16px;
+  padding: 16px 20px;
+  gap: 8px;
+  border-radius: 8px;
+  border-style: none;
+  font-size: 16px;
+}
+
+#form_feel {
+  color: #838aa3;
+
+  width: 348px;
+  height: 56px;
+
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+
+  margin-bottom: 16px;
+  padding: 16px 20px;
+  gap: 8px;
+  border-radius: 8px;
+  border-style: none;
   font-size: 16px;
 }
