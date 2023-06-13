@@ -7,14 +7,6 @@
   font-weight: 600;
 }
 
-select {
-  padding: 2px 2px 2px 2px;
-  border: none;
-  background-image: url("http://cdn1.iconfinder.com/data/icons/cc_mono_icon_set/blacks/16x16/br_down.png");
-  background-position: right center;
-  background-repeat: no-repeat;
-}
-
 #form_age {
   color: #838aa3;
 
@@ -74,4 +66,26 @@ select {
   border-radius: 8px;
   border-style: none;
   font-size: 16px;
+}
+
+select {
+  -webkit-appearance: none;
+}
+
+#dropIcon {
+  position: absolute;
+  top: 45px;
+  right: 24.5px;
+}
+
+#dropIcon2 {
+  position: absolute;
+  top: 147px;
+  right: 24.5px;
+}
+
+#dropIcon3 {
+  position: absolute;
+  top: 248px;
+  right: 24.5px;
 }

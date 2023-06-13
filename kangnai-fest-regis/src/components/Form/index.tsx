@@ -1,6 +1,9 @@
 import React from "react";
+import Image from "next/image";
 import "./styles.css";
 import { useState } from "react";
+
+import dropIcon from "/public/img/dropIcon.svg";
 
 const RegisForm = function () {
   const [selectedAge, setSelectedAge] = useState("");
@@ -18,6 +21,7 @@ const RegisForm = function () {
     <div className="regisform-container">
       <label htmlFor="age">อายุ</label>
       <div className="custom-age">
+        <Image id="dropIcon" src={dropIcon} alt="drop icon" />
         <select
           id="form_age"
           value={selectedAge}
@@ -35,6 +39,7 @@ const RegisForm = function () {
       </div>
 
       <label htmlFor="how">รู้จักงานนี้จากไหน</label>
+      <Image id="dropIcon2" src={dropIcon} alt="drop icon" />
       <select
         id="form_how"
         value={selectedAge}
@@ -47,6 +52,7 @@ const RegisForm = function () {
       </select>
 
       <label htmlFor="feel">สิ่งที่สนใจในงาน</label>
+      <Image id="dropIcon3" src={dropIcon} alt="drop icon" />
       <select
         id="form_feel"
         value={selectedAge}
