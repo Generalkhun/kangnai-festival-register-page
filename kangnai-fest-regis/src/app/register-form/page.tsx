@@ -53,6 +53,7 @@ const index = (props: Props) => {
 
         <div className="text-container">
           <h2>{headRegis}</h2>
+          <h2>{headRegis}</h2>
         </div>
         <div className="form-container">
           <RegisForm />
