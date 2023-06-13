@@ -62,3 +62,9 @@
   position: absolute;
   top: 690px;
 }
+
+#arrow {
+  position: absolute;
+  top: 20px;
+  left: 280px;
+}

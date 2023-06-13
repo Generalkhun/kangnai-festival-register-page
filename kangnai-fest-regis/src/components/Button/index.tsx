@@ -13,5 +13,5 @@ export const WalkInButton = ({ buttonText }: Props) => {
 };
 
 export const NextButton = ({ buttonText }: Props) => {
-  return <button className="next_btn">{buttonText} &rarr;</button>;
+  return <button className="next_btn">{buttonText}</button>;
 };

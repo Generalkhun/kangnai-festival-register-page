@@ -13,6 +13,7 @@ import { introText2 } from "@/constants";
 import introHead from "/public/img/intro-head.svg";
 import vol1 from "/public/img/vol1.svg";
 import bg02 from "/public/img/BG02.svg";
+import arrow from "/public/img/arrow.svg";
 //----------------------------------------------//
 
 type Props = {};
@@ -33,6 +34,7 @@ const index = (props: Props) => {
         <div className="nextBtn-container">
           <Link href={"/emotional-check"}>
             <NextButton buttonText={introBtnText} />
+            <Image id="arrow" src={arrow} alt="arrow" />
           </Link>
         </div>
       </div>
