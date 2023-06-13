@@ -15,8 +15,6 @@ const RegisForm = function () {
     ageOptions.push(i);
   }
 
-  const howOptions = [];
-
   return (
     <div className="regisform-container">
       <label htmlFor="age">อายุ</label>
@@ -42,30 +40,30 @@ const RegisForm = function () {
       <Image id="dropIcon2" src={dropIcon} alt="drop icon" />
       <select
         id="form_how"
-        value={selectedAge}
-        onChange={(event) => setSelectedAge(event.target.value)}
+        value={selectedHow}
+        onChange={(event) => setSelectedHow(event.target.value)}
       >
         <option id="option_how" value="" disabled hidden>
           โปรดเลือก
         </option>
         <option value="facebook">Facebook</option>
+        <option value="instragram">Instragram</option>
+        <option value="tiktok">Tiktok</option>
       </select>
 
       <label htmlFor="feel">สิ่งที่สนใจในงาน</label>
       <Image id="dropIcon3" src={dropIcon} alt="drop icon" />
       <select
         id="form_feel"
-        value={selectedAge}
-        onChange={(event) => setSelectedAge(event.target.value)}
+        value={selectedFeel}
+        onChange={(event) => setSelectedFeel(event.target.value)}
       >
         <option id="option_feel" value="" disabled hidden>
           โปรดเลือก
         </option>
-        {ageOptions.map((age) => (
-          <option key={age} value={age}>
-            {age}
-          </option>
-        ))}
+        <option value="workshop">Workshop</option>
+        <option value="workshop2">Workshop2</option>
+        <option value="workshop3">workshop3</option>
       </select>
     </div>
   );

@@ -89,3 +89,8 @@ select {
   top: 248px;
   right: 24.5px;
 }
+
+.custom-age option {
+  position: relative;
+  display: inline-block;
+}
