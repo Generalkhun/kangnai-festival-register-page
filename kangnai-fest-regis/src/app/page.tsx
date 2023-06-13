@@ -9,25 +9,23 @@ import { headText1 } from "../constants";
 import { headText2 } from "../constants";
 
 //-------------------image-----------------------//
-import festLogo from "/public/img/LOGO.png";
-import birds from "/public/img/birds.png";
-import gradBlue from "/public/img/gradient-blue2.png";
-import bgWhite from "/public/img/bg-white.png";
-import spon1 from "/public/img/spon1.png";
-import spon2 from "/public/img/spon2.png";
-import spon3 from "/public/img/spon3.png";
-import human from "/public/img/human.png";
-import cloud1 from "/public/img/cloud1.png";
-import cloud2 from "/public/img/cloud2.png";
-import breeze from "/public/img/breeze.png";
-import line from "/public/img/เส้นคั่น.png";
+import festLogo from "/public/img/LOGO.svg";
+import spon1 from "/public/img/spon1.svg";
+import spon2 from "/public/img/spon2.svg";
+import spon3 from "/public/img/spon3.svg";
+import line from "/public/img/เส้นคั่น.svg";
+import birds from "/public/img/birds.svg";
+import bgWhite from "/public/img/bg-white.svg";
+import human from "/public/img/human.svg";
+import breeze from "/public/img/breeze.svg";
+import cloud1 from "/public/img/cloud1.svg";
+import cloud2 from "/public/img/cloud2.svg";
 //----------------------------------------------//
 
 export default function Home() {
   return (
     <div>
       <div className="home-container">
-        <Image id="grad-blue" src={gradBlue} alt="gradient-blue" />
         <Image id="festLogo" src={festLogo} alt="Fest Logo" />
         <Image id="bg-white" src={bgWhite} alt="bg-white" />
         <Image id="human" src={human} alt="human" />

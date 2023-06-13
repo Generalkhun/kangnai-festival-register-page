@@ -4,7 +4,7 @@
   margin: 0;
 }
 
-.regis-container {
+.intro-container {
   background-color: #d2eef2;
   position: absolute;
   width: 100%;
@@ -61,4 +61,10 @@
 .nextBtn-container {
   position: absolute;
   top: 690px;
+}
+
+#arrow {
+  position: absolute;
+  top: 20px;
+  left: 280px;
 }
