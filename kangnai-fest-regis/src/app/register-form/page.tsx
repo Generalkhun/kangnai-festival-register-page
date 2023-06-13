@@ -1,6 +1,6 @@
 "use client";
 
-import { NextButton } from "@/components/Button";
+import { NextButton } from "@/components/Button/button";
 import { headRegis, nextBtnText } from "@/constants";
 
 import bg01 from "/public/img/bg01.svg";
@@ -13,7 +13,7 @@ import Link from "next/link";
 import Image from "next/image";
 import React, { useState } from "react";
 import "./page.css";
-import RegisForm from "@/components/Form";
+import RegisForm from "@/components/Form/form";
 
 type Props = {};
 

@@ -3,7 +3,7 @@ import React from "react";
 import Image from "next/image";
 import "./page.css";
 
-import { NextButton } from "@/components/Button";
+import { NextButton } from "@/components/Button/button";
 
 import { introBtnText } from "@/constants";
 import { introText1 } from "@/constants";

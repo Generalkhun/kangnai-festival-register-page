@@ -1,4 +1,4 @@
-import { ProceedingButton } from "@/components/Button";
+import { ProceedingButton } from "@/components/Button/button";
 import Link from "next/link";
 import React from "react";
 
