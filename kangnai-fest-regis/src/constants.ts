@@ -4,6 +4,7 @@ import "../src/constants.css";
 export const regisBtnText = "ลงทะเบียนมาล่วงหน้า";
 export const walkInBtnText = "Walk-in";
 export const introBtnText = "ทักทายความพัง";
+export const nextBtnText = "ต่อไป";
 
 //-------Text-------
 export const headText1 = "พาตัวและใจกลับมาข้างในพร้อม";

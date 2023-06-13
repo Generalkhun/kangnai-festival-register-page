@@ -21,7 +21,7 @@ type Props = {};
 const index = (props: Props) => {
   return (
     <div>
-      <div className="regis-container">
+      <div className="intro-container">
         <Image id="bg02" src={bg02} alt="bg-02" />
         <Image id="vol1" src={vol1} alt="vol.1" />
         <Image id="intro-head" src={introHead} alt="introduce head" />

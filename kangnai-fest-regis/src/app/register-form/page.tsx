@@ -1,10 +1,18 @@
 "use client";
 
-import { ProceedingButton } from "@/components/Button";
+import { NextButton } from "@/components/Button";
+import { nextBtnText } from "@/constants";
+
+import bg01 from "/public/img/bg01.svg";
+import arrow from "/public/img/arrow.svg";
+import miniLogo from "public/img/miniLogo.svg";
+
 // import { FormRegisData } from "@/types/formData";
 // import axios from 'axios'
 import Link from "next/link";
+import Image from "next/image";
 import React, { useState } from "react";
+import "./page.css";
 
 type Props = {};
 
@@ -37,10 +45,19 @@ const index = (props: Props) => {
   // }
   return (
     <div>
-      register form
-      <Link href={"/emotional-check"}>
-        <ProceedingButton buttonText={`ลงทะเบียนเข้างาน`} />
-      </Link>
+      <div className="regis-container">
+        <Image id="bg01" src={bg01} alt="bg-01" />
+        <Image id="miniLogo" src={miniLogo} alt="mini logo" />
+
+        <div className="form-container"></div>
+
+        <div className="nextBtn-container">
+          <Link href={"/emotional-check"}>
+            <NextButton buttonText={nextBtnText} />
+            <Image id="arrow" src={arrow} alt="arrow" />
+          </Link>
+        </div>
+      </div>
     </div>
   );
 };
