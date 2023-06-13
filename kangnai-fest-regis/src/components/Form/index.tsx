@@ -10,14 +10,32 @@ const RegisForm = function () {
   const [selectedHow, setSelectedHow] = useState("");
   const [selectedFeel, setSelectedFeel] = useState("");
 
-  const ageOptions = [];
-  for (let i = 1; i <= 100; i++) {
-    ageOptions.push(i);
-  }
+  // const ageOptions = [];
+  // for (let i = 1; i <= 100; i++) {
+  //   ageOptions.push(i);
+  // }
 
   return (
     <div className="regisform-container">
+      <label className="gender" htmlFor="gender">
+        เพศ
+      </label>
+      <div className="checkbox-container">
+        <input className="check01" type="checkbox" />
+        <label className="gender_pick" htmlFor="man">
+          ชาย
+        </label>
+        <input className="check01" type="checkbox" />
+        <label className="gender_pick" htmlFor="woman">
+          หญิง
+        </label>
+        <input className="check01" type="checkbox" />
+        <label className="gender_pick" htmlFor="woman">
+          ให้ฉันเขียนเอง
+        </label>
+      </div>
       <label htmlFor="age">อายุ</label>
+
       <div className="custom-age">
         <Image id="dropIcon" src={dropIcon} alt="drop icon" />
         <select
@@ -28,11 +46,22 @@ const RegisForm = function () {
           <option id="option_age" value="" disabled hidden>
             โปรดเลือก
           </option>
-          {ageOptions.map((age) => (
+          <option value="1-9">1 - 9</option>
+          <option value="10-17">10 - 17</option>
+          <option value="18-23">18 - 23</option>
+          <option value="24-29">24 - 29</option>
+          <option value="30-35">30 - 35</option>
+          <option value="36-42">36 - 42</option>
+          <option value="43-50">43 - 50</option>
+          <option value="51-60">51 - 60</option>
+          <option value="61-70">61 - 70</option>
+          <option value="71-">71 เป็นต้นไป</option>
+
+          {/* {ageOptions.map((age) => (
             <option id="age_num" key={age} value={age}>
               {age}
             </option>
-          ))}
+          ))} */}
         </select>
       </div>
 
