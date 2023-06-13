@@ -1,14 +1,20 @@
 import React from "react";
 import Image from "next/image";
-import "./styles.css";
+import "./form.css";
 import { useState } from "react";
 
 import dropIcon from "/public/img/dropIcon.svg";
+import CustomForm from "../FormCustom/formCustom";
 
 const RegisForm = function () {
   const [selectedAge, setSelectedAge] = useState("");
   const [selectedHow, setSelectedHow] = useState("");
   const [selectedFeel, setSelectedFeel] = useState("");
+  const [ischecked, setIsChecked] = useState(false);
+
+  const checkedHandler = () => {
+    setIsChecked((ischecked) => !ischecked);
+  };
 
   // const ageOptions = [];
   // for (let i = 1; i <= 100; i++) {
@@ -20,6 +26,8 @@ const RegisForm = function () {
       <label className="gender" htmlFor="gender">
         เพศ
       </label>
+      {`${!ischecked ? <CustomForm /> : ""}`}
+
       <div className="checkbox-container">
         <input className="check01" type="checkbox" />
         <label className="gender_pick" htmlFor="man">
@@ -29,7 +37,7 @@ const RegisForm = function () {
         <label className="gender_pick" htmlFor="woman">
           หญิง
         </label>
-        <input className="check01" type="checkbox" />
+        <input className="check01" type="checkbox" onChange={checkedHandler} />
         <label className="gender_pick" htmlFor="woman">
           ให้ฉันเขียนเอง
         </label>
