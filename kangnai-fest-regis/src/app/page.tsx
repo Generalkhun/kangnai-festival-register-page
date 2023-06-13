@@ -11,23 +11,16 @@ import { headText2 } from "../constants";
 //-------------------image-----------------------//
 import festLogo from "/public/img/LOGO.svg";
 import birds from "/public/img/birds.svg";
-// import gradBlue from "/public/img/gradient-blue2.png";
 import bgWhite from "/public/img/bg-white.svg";
-import spon from "/public/img/spon.png";
-// import spon2 from "/public/img/spon2.png";
-// import spon3 from "/public/img/spon3.png";
-// import human from "/public/img/human.png";
-// import cloud1 from "/public/img/cloud1.png";
-// import cloud2 from "/public/img/cloud2.png";
-// import breeze from "/public/img/breeze.png";
-// import line from "/public/img/เส้นคั่น.png";
+import spon from "/public/img/bg-white.svg"
+import breeze from "/public/img/spon.png";
 //----------------------------------------------//
 
 export default function Home() {
   return (
     <div>
       <div className="home-container">
-        {/* <Image id="grad-blue" src={gradBlue} alt="gradient-blue" />
+        {/* 
         <Image id="festLogo" src={festLogo} alt="Fest Logo" />
         <Image id="bg-white" src={bgWhite} alt="bg-white" />
         <Image id="human" src={human} alt="human" />
