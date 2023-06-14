@@ -10,12 +10,16 @@ const RegisForm = function () {
   const [selectedAge, setSelectedAge] = useState("");
   const [selectedHow, setSelectedHow] = useState("");
   const [selectedFeel, setSelectedFeel] = useState("");
-  const [ischecked, setIsChecked] = useState(false);
+  const [gender, setGender] = useState("");
+  const [isOpened, setIsOpened] = useState(false);
 
-  const checkHandler = function () {
-    setIsChecked((ischecked) => !ischecked);
+  const openHandler = () => {
+    setIsOpened((isOpened) => !isOpened);
+
+    if (gender === "male" || gender === "female") {
+      setIsOpened(!isOpened);
+    }
   };
-
   // const ageOptions = [];
   // for (let i = 1; i <= 100; i++) {
   //   ageOptions.push(i);
@@ -27,23 +31,39 @@ const RegisForm = function () {
         เพศ
       </label>
       <div className="checkbox-container">
-        <input className="check01" type="checkbox" />
+        <input
+          className="check01"
+          type="checkbox"
+          checked={gender === "male"}
+          onChange={() => setGender("male")}
+        />
         <label className="gender_pick" htmlFor="man">
           ชาย
         </label>
-        <input className="check01" type="checkbox" />
+        <input
+          className="check01"
+          type="checkbox"
+          checked={gender === "female"}
+          onChange={() => setGender("female")}
+        />
         <label className="gender_pick" htmlFor="woman">
           หญิง
         </label>
-        <input className="check01" type="checkbox" onClick={checkHandler} />
+        <input
+          className="check01"
+          type="checkbox"
+          checked={gender === "others"}
+          onChange={() => setGender("others")}
+          onClick={openHandler}
+        />
         <label className="gender_pick" htmlFor="woman">
           ให้ฉันเขียนเอง
         </label>
       </div>
-      {ischecked ? <CustomForm /> : ""}
+      {!isOpened ? <CustomForm /> : ""}
 
       <label htmlFor="age">อายุ</label>
-      {ischecked ? (
+      {!isOpened ? (
         <Image
           id="dropIcon"
           src={dropIcon}
@@ -83,12 +103,12 @@ const RegisForm = function () {
       </div>
 
       <label htmlFor="how">รู้จักงานนี้จากไหน</label>
-      {ischecked ? (
+      {!isOpened ? (
         <Image
           id="dropIcon2"
           src={dropIcon}
           alt="drop icon"
-          style={{ top: "244px" }}
+          style={{ top: "300px" }}
         />
       ) : (
         <Image id="dropIcon2" src={dropIcon} alt="drop icon" />
@@ -107,7 +127,17 @@ const RegisForm = function () {
       </select>
 
       <label htmlFor="feel">สิ่งที่สนใจในงาน</label>
-      <Image id="dropIcon3" src={dropIcon} alt="drop icon" />
+      {!isOpened ? (
+        <Image
+          id="dropIcon3"
+          src={dropIcon}
+          alt="drop icon"
+          style={{ top: "400px" }}
+        />
+      ) : (
+        <Image id="dropIcon3" src={dropIcon} alt="drop icon" />
+      )}
+
       <select
         id="form_feel"
         value={selectedFeel}
