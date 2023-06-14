@@ -8,7 +8,9 @@
 }
 
 .checkbox-container {
-  margin-bottom: 5px;
+  position: relative;
+  top: -5px;
+  left: -8px;
 }
 
 .check01 {
@@ -59,27 +61,6 @@
   border-style: none;
   font-size: 16px;
 }
-
-.form_age option {
-  padding: 8px;
-  font-size: 16px;
-  background-color: #fff;
-}
-
-.form_age::before {
-  content: "";
-  position: absolute;
-  top: 50%;
-  right: 10px;
-  width: 10px;
-  height: 10px;
-  transform: translateY(-50%) rotate(45deg);
-  pointer-events: none;
-}
-
-/* #age_num {
-  font-size: 16px;
-} */
 
 #form_how {
   color: #838aa3;
