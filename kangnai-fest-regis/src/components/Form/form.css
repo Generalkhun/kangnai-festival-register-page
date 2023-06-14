@@ -41,9 +41,9 @@
   outline: 3px solid #50a5ae;
 }
 
-#form_age {
+.form_age {
   color: #838aa3;
-
+  background-color: #fff;
   width: 348px;
   height: 56px;
 
@@ -60,9 +60,26 @@
   font-size: 16px;
 }
 
-#age_num {
+.form_age option {
+  padding: 8px;
   font-size: 16px;
+  background-color: #fff;
 }
+
+.form_age::before {
+  content: "";
+  position: absolute;
+  top: 50%;
+  right: 10px;
+  width: 10px;
+  height: 10px;
+  transform: translateY(-50%) rotate(45deg);
+  pointer-events: none;
+}
+
+/* #age_num {
+  font-size: 16px;
+} */
 
 #form_how {
   color: #838aa3;
@@ -126,34 +143,21 @@ select {
   cursor: pointer;
 }
 
-.select-items {
-  position: absolute;
-  background-color: DodgerBlue;
-  top: 100%;
-  left: 0;
-  right: 0;
-  z-index: 99;
-}
-
-.custom-age select {
-  display: none;
-}
-
 #dropIcon {
   position: absolute;
-  top: 106px;
+  top: 112px;
   right: 24.5px;
 }
 
 #dropIcon2 {
   position: absolute;
-  top: 207px;
+  top: 214px;
   right: 24.5px;
 }
 
 #dropIcon3 {
   position: absolute;
-  top: 307px;
+  top: 315px;
   right: 24.5px;
 }
 

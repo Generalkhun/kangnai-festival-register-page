@@ -12,7 +12,7 @@ const RegisForm = function () {
   const [selectedFeel, setSelectedFeel] = useState("");
   const [ischecked, setIsChecked] = useState(false);
 
-  const checkedHandler = () => {
+  const checkHandler = function () {
     setIsChecked((ischecked) => !ischecked);
   };
 
@@ -26,8 +26,6 @@ const RegisForm = function () {
       <label className="gender" htmlFor="gender">
         เพศ
       </label>
-      {`${!ischecked ? <CustomForm /> : ""}`}
-
       <div className="checkbox-container">
         <input className="check01" type="checkbox" />
         <label className="gender_pick" htmlFor="man">
@@ -37,23 +35,34 @@ const RegisForm = function () {
         <label className="gender_pick" htmlFor="woman">
           หญิง
         </label>
-        <input className="check01" type="checkbox" onChange={checkedHandler} />
+        <input className="check01" type="checkbox" onClick={checkHandler} />
         <label className="gender_pick" htmlFor="woman">
           ให้ฉันเขียนเอง
         </label>
       </div>
-      <label htmlFor="age">อายุ</label>
+      {ischecked ? <CustomForm /> : ""}
 
-      <div className="custom-age">
+      <label htmlFor="age">อายุ</label>
+      {ischecked ? (
+        <Image
+          id="dropIcon"
+          src={dropIcon}
+          alt="drop icon"
+          style={{ top: "142px" }}
+        />
+      ) : (
         <Image id="dropIcon" src={dropIcon} alt="drop icon" />
+      )}
+      <div className="dropdown-age">
         <select
-          id="form_age"
+          className="form_age"
           value={selectedAge}
           onChange={(event) => setSelectedAge(event.target.value)}
         >
-          <option id="option_age" value="" disabled hidden>
+          <option value="" disabled hidden>
             โปรดเลือก
           </option>
+
           <option value="1-9">1 - 9</option>
           <option value="10-17">10 - 17</option>
           <option value="18-23">18 - 23</option>
@@ -74,7 +83,16 @@ const RegisForm = function () {
       </div>
 
       <label htmlFor="how">รู้จักงานนี้จากไหน</label>
-      <Image id="dropIcon2" src={dropIcon} alt="drop icon" />
+      {ischecked ? (
+        <Image
+          id="dropIcon2"
+          src={dropIcon}
+          alt="drop icon"
+          style={{ top: "244px" }}
+        />
+      ) : (
+        <Image id="dropIcon2" src={dropIcon} alt="drop icon" />
+      )}
       <select
         id="form_how"
         value={selectedHow}

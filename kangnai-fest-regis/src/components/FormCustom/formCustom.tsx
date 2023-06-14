@@ -5,7 +5,9 @@ import "./formCustom.css";
 const CustomForm = function () {
   return (
     <div>
-      <h4>HELLO!</h4>
+      <form action="">
+        <input type="text" placeholder="โปรดเขียนเพศของคุณ" />
+      </form>
     </div>
   );
 };
