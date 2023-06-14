@@ -15,11 +15,8 @@ const RegisForm = function () {
 
   const openHandler = () => {
     setIsOpened((isOpened) => !isOpened);
-
-    if (gender === "male" || gender === "female") {
-      setIsOpened(!isOpened);
-    }
   };
+
   // const ageOptions = [];
   // for (let i = 1; i <= 100; i++) {
   //   ageOptions.push(i);
@@ -33,25 +30,27 @@ const RegisForm = function () {
       <div className="checkbox-container">
         <input
           className="check01"
-          type="checkbox"
+          type="radio"
           checked={gender === "male"}
           onChange={() => setGender("male")}
+          onClick={() => setIsOpened(false)}
         />
         <label className="gender_pick" htmlFor="man">
           ชาย
         </label>
         <input
           className="check01"
-          type="checkbox"
+          type="radio"
           checked={gender === "female"}
           onChange={() => setGender("female")}
+          onClick={() => setIsOpened(false)}
         />
         <label className="gender_pick" htmlFor="woman">
           หญิง
         </label>
         <input
           className="check01"
-          type="checkbox"
+          type="radio"
           checked={gender === "others"}
           onChange={() => setGender("others")}
           onClick={openHandler}
@@ -60,15 +59,15 @@ const RegisForm = function () {
           ให้ฉันเขียนเอง
         </label>
       </div>
-      {!isOpened ? <CustomForm /> : ""}
+      {isOpened ? <CustomForm /> : ""}
 
       <label htmlFor="age">อายุ</label>
-      {!isOpened ? (
+      {isOpened ? (
         <Image
           id="dropIcon"
           src={dropIcon}
           alt="drop icon"
-          style={{ top: "142px" }}
+          style={{ top: "190px" }}
         />
       ) : (
         <Image id="dropIcon" src={dropIcon} alt="drop icon" />
@@ -103,12 +102,12 @@ const RegisForm = function () {
       </div>
 
       <label htmlFor="how">รู้จักงานนี้จากไหน</label>
-      {!isOpened ? (
+      {isOpened ? (
         <Image
           id="dropIcon2"
           src={dropIcon}
           alt="drop icon"
-          style={{ top: "300px" }}
+          style={{ top: "290px" }}
         />
       ) : (
         <Image id="dropIcon2" src={dropIcon} alt="drop icon" />
@@ -127,12 +126,12 @@ const RegisForm = function () {
       </select>
 
       <label htmlFor="feel">สิ่งที่สนใจในงาน</label>
-      {!isOpened ? (
+      {isOpened ? (
         <Image
           id="dropIcon3"
           src={dropIcon}
           alt="drop icon"
-          style={{ top: "400px" }}
+          style={{ top: "390px" }}
         />
       ) : (
         <Image id="dropIcon3" src={dropIcon} alt="drop icon" />
