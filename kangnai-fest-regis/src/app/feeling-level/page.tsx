@@ -8,6 +8,11 @@ import bg01 from "/public/img/BG01.svg";
 import arrow from "/public/img/arrow.svg";
 
 import { nextBtnText } from "@/constants";
+import { headFeel1 } from "@/constants";
+import { headFeel2 } from "@/constants";
+import { headFeel3 } from "@/constants";
+import { feelbad } from "@/constants";
+import { feelgood } from "@/constants";
 
 type Props = {};
 
@@ -35,6 +40,11 @@ const index = (props: Props) => {
           <Image id="arrow" src={arrow} alt="arrow" />
         </div>
       </Link>
+      <div className="text-container">
+        <h2 id="head1">{headFeel1}</h2>
+        <h2 id="head3">{headFeel3}</h2>
+        <h2 id="head2">{headFeel2}</h2>
+      </div>
     </div>
   );
 };

@@ -88,3 +88,35 @@
   width: auto;
   height: 100%;
 }
+
+.text-container {
+  text-align: center;
+  top: 131px;
+}
+
+.text-container #head1 {
+  position: fixed;
+  color: #bf83cb;
+  font-size: 32px;
+  font-weight: 500;
+  top: 131px;
+  left: 160px;
+}
+
+.text-container #head2 {
+  position: fixed;
+  color: #4b9199;
+  font-size: 32px;
+  font-weight: 500;
+  top: 182px;
+  left: 75px;
+}
+
+.text-container #head3 {
+  position: fixed;
+  color: #bf83cb;
+  font-size: 32px;
+  font-weight: 500;
+  top: 182px;
+  left: 127px;
+}
