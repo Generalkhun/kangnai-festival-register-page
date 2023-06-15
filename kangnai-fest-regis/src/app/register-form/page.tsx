@@ -51,9 +51,6 @@ const index = (props: Props) => {
         <Image id="bg01" src={bg01} alt="bg-01" />
         <Image id="miniLogo" src={miniLogo} alt="mini logo" />
 
-        <div className="text-container">
-          <h2>{headRegis}</h2>
-        </div>
         <div className="form-container">
           <RegisForm />
         </div>
@@ -62,6 +59,9 @@ const index = (props: Props) => {
             <NextButton buttonText={nextBtnText} />
             <Image id="arrow" src={arrow} alt="arrow" />
           </Link>
+        </div>
+        <div className="text-container">
+          <h2>{headRegis}</h2>
         </div>
       </div>
     </div>
