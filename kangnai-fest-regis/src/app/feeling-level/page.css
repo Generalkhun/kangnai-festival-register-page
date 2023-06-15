@@ -22,9 +22,9 @@
 
 #progress-num .slider {
   position: absolute;
-  top: 470px;
-  left: 15px;
-  width: 300px;
+  top: 476px;
+  left: 56px;
+  width: 315px;
   height: 8px;
   border-radius: 8px;
   background: #6ebec7;
@@ -42,7 +42,7 @@
   cursor: pointer;
 }
 
-#progress-num {
+/* #progress-num {
   position: absolute;
   left: 46px;
   top: 0;
@@ -50,8 +50,8 @@
   padding: 0;
   display: flex;
   justify-content: space-between;
-}
-#progress-num::before {
+} */
+/* #progress-num::before {
   content: "";
   background-color: lightgray;
   position: absolute;
@@ -60,7 +60,7 @@
   height: 5px;
   width: 100%;
   z-index: -1;
-}
+} */
 
 .nextBtn-container {
   position: absolute;

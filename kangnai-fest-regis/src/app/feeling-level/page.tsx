@@ -6,6 +6,10 @@ import { NextButton } from "@/components/Button/button";
 
 import bg01 from "/public/img/BG01.svg";
 import arrow from "/public/img/arrow.svg";
+import unhappy from "/public/img/UNHAPPY.svg";
+import neutral from "/public/img/NEUTRAL.svg";
+import happy from "/public/img/HAPPY.svg";
+import veryHappy from "/public/img/VERYHAPPY.svg";
 
 import { nextBtnText } from "@/constants";
 import { headFeel1 } from "@/constants";
@@ -21,6 +25,14 @@ const index = (props: Props) => {
     <div>
       <div id="progress">
         <Image id="bg01" src={bg01} alt="bg-01" />
+        <Image id="emo-unhappy active" src={unhappy} alt="feel unhappy"></Image>
+        <Image id="emo-neutral active" src={neutral} alt="feel neutral"></Image>
+        <Image id="emo-happy active" src={happy} alt="feel happy"></Image>
+        <Image
+          id="emo-veryHappy active"
+          src={veryHappy}
+          alt="feel happy"
+        ></Image>
         <div id="progress-bar">
           <div id="progress-num">
             <input
