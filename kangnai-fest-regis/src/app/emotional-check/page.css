@@ -9,13 +9,21 @@
   max-height: 926px;
   align-items: center;
   overflow: hidden;
+  background-image: url("../../../public/img/BG01.png");
 }
+
 
 .bg01 {
   position: absolute;
   top: 0px;
 }
 
+.underliner {
+    position: absolute;
+    top: 182.42px;
+    right: 89.97px;
+  }
+  
 .text-container {
   display: flex;
   flex-direction: column;
@@ -45,6 +53,23 @@
   margin: -4px 0px;
 }
 
+.text2 {
+    width: 373px;
+    height: 102px;
+    font-family: "Athiti";
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 51px;
+    text-align: center;
+    color: #bf83cb;
+    mix-blend-mode: normal;
+    flex: none;
+    order: 0;
+    flex-grow: 0;
+    margin: -4px 0px;
+  }
+
 .emotion-circle-rows-odd {
 padding-bottom: 16px;
   gap: 8px;
@@ -63,5 +88,10 @@ padding-bottom: 16px;
 .emotion-circle-container {
     width: 428px;
     overflow-x: scroll;
-    margin-top: 265px;
+    position: absolute;
+    top: 274px;
+}
+.proceeding-btn-container {
+    position:absolute;
+    bottom: 56px;
 }
