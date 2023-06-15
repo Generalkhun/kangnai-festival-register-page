@@ -58,7 +58,7 @@ const index = (props: Props) => {
           <RegisForm />
         </div>
         <div className="nextBtn-container">
-          <Link href={"/emotional-check"}>
+          <Link href={"/feeling-level"}>
             <NextButton buttonText={nextBtnText} />
             <Image id="arrow" src={arrow} alt="arrow" />
           </Link>
