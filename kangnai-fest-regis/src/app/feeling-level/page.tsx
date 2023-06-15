@@ -3,6 +3,7 @@ import React from "react";
 import Image from "next/image";
 import "./page.css";
 import { NextButton } from "@/components/Button/button";
+import Slider from "@/components/Slider/slider";
 
 import bg01 from "/public/img/BG01.svg";
 import arrow from "/public/img/arrow.svg";
@@ -25,27 +26,12 @@ const index = (props: Props) => {
     <div>
       <div id="progress">
         <Image id="bg01" src={bg01} alt="bg-01" />
-        <Image id="emo-unhappy active" src={unhappy} alt="feel unhappy"></Image>
-        <Image id="emo-neutral active" src={neutral} alt="feel neutral"></Image>
-        <Image id="emo-happy active" src={happy} alt="feel happy"></Image>
-        <Image
-          id="emo-veryHappy active"
-          src={veryHappy}
-          alt="feel happy"
-        ></Image>
-        <div id="progress-bar">
-          <div id="progress-num">
-            <input
-              type="range"
-              min="1"
-              max="100"
-              value="50"
-              className="slider"
-              id="myRange"
-            />
-          </div>
-        </div>
+        <Image id="emo-unhappy" src={unhappy} alt="feel unhappy" />
+        <Image id="emo-neutral" src={neutral} alt="feel neutral" />
+        <Image id="emo-happy" src={happy} alt="feel happy" />
+        <Image id="emo-veryHappy" src={veryHappy} alt="feel veryhappy" />
       </div>
+
       <Link href={"/emotional-check"}>
         <div className="nextBtn-container">
           <NextButton buttonText={nextBtnText} />
