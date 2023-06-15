@@ -2,8 +2,12 @@ import Link from "next/link";
 import React from "react";
 import Image from "next/image";
 import "./page.css";
+import { NextButton } from "@/components/Button/button";
 
 import bg01 from "/public/img/BG01.svg";
+import arrow from "/public/img/arrow.svg";
+
+import { introBtnText } from "@/constants";
 
 type Props = {};
 
@@ -22,7 +26,8 @@ const index = (props: Props) => {
         </div>
       </div>
       <Link href={"/emotional-check"}>
-        <button>next</button>
+        <NextButton buttonText={introBtnText} />
+        <Image id="arrow" src={arrow} alt="arrow" />
       </Link>
     </div>
   );
