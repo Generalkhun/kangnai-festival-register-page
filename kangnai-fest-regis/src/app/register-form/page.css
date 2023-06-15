@@ -3,7 +3,7 @@
 }
 
 .regis-container {
-  position: absolute;
+  position: fixed;
   width: 100%;
   height: 100%;
   max-width: 428px;
@@ -28,6 +28,8 @@
 #bg01 {
   position: absolute;
   top: 0;
+  width: auto;
+  height: 100%;
 }
 
 #miniLogo {
