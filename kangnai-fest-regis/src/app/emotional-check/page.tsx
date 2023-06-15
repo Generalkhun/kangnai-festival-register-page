@@ -1,10 +1,10 @@
 import { ProceedingButton } from "@/components/Button/button";
 import Link from "next/link";
-import React, { useCallback, useEffect, useState } from "react";
+import React, { useCallback, useState } from "react";
 import Image from "next/image";
 import "./page.css";
-import bg01 from "/public/img/BG01.png";
-import underliner from "/public/img/underliner.png";
+import bg01 from "/public/img/BG01.svg";
+import underliner from "/public/img/underliner.svg";
 import { emotionalPageHeaderSubText, emotionalPageHeaderText1, emotionalPageHeaderText2, emotionalPageHeaderText3, emotionalPageHeaderText4, emotionWords } from "@/constants";
 import { EmotionCircle } from "@/components/EmotionCircle";
 import { useCustomEmotionModal } from "./useCustomEmotionModal";
@@ -29,13 +29,14 @@ const index = (props: Props) => {
         />
     ), [selectedEmotionWord, onSelectEmotion])
 
-    const { renderCustomEmotionModal } = useCustomEmotionModal({
+    const { renderCustomEmotionModal,isShowCustomEmotionModal } = useCustomEmotionModal({
         selectedEmotionWord,
         setSelectedEmotionWord,
         addCustomEmotionWord,
     })
     return (
-        <div className="page-container">
+        <div className={"page-container"}>
+            <div className={isShowCustomEmotionModal ? 'backdrop' : undefined}></div>
             {renderCustomEmotionModal()}
             <Image id="bg01" src={bg01} alt="bg-02" />
             <div style={{
@@ -90,7 +91,7 @@ const index = (props: Props) => {
                 </div>
             </div>
             <div className='proceeding-btn-container'>
-                {selectedEmotionWord.length && <Link href={"/feeling-card"}>
+                {!!selectedEmotionWord.length && <Link href={"/feeling-card"}>
                     <ProceedingButton buttonText={`ต่อไป`} />
                 </Link>}
             </div>
