@@ -1,3 +1,4 @@
+'use client';
 import Image from "next/image";
 import Link from "next/link";
 import "./page.css";
@@ -23,6 +24,12 @@ import cloud2 from "/public/img/cloud2.svg";
 //----------------------------------------------//
 
 export default function Home() {
+  const onClickWalkin = () => {
+    window.localStorage.setItem("regisAs","walk-in")
+  }
+  const onClickPreRegistered = () => {
+    window.localStorage.setItem("regisAs","pre-regis")
+  }
   return (
     <div>
       <div className="home-container">
@@ -39,11 +46,11 @@ export default function Home() {
           <h2>{headText2}</h2>
         </div>
         <div className="btn-container">
-          <Link href={"/introduce-vol.1"}>
-            <ProceedingButton buttonText={regisBtnText} />
+          <Link href={"/register-form"}>
+            <ProceedingButton onClick={onClickPreRegistered} buttonText={regisBtnText} />
           </Link>
           <Link href={"/register-form"}>
-            <WalkInButton buttonText={walkInBtnText} />
+            <WalkInButton onClick={onClickWalkin} buttonText={walkInBtnText} />
           </Link>
         </div>
         <ul className="foot-container">

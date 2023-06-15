@@ -31,6 +31,31 @@ a {
   margin-left: 67px;
 }
 
+.next_btn_disabled {
+  color: #ffffff;
+  text-decoration: none;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 21px;
+  background: lightgray;
+  text-align: left;
+
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  padding: 12px 30px;
+  gap: 10px;
+
+  width: 294px;
+  height: 48px;
+  box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.15);
+  border-radius: 70px;
+  border-style: none;
+  margin-left: 67px;
+}
+
 .walkin_btn {
   color: #6ebec7;
   background-color: #ffffff;

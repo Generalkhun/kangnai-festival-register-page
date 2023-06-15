@@ -1,12 +1,14 @@
 import React from "react";
 import "./formCustom.css";
-
-const CustomForm = function () {
+interface Props {
+  setGender: any
+}
+const CustomForm = function ({setGender}:Props) {
   return (
     <div>
       <div className="custom-form-container">
         <div className="custom-form">
-          <input type="text" placeholder="โปรดเขียนเพศของคุณ" />
+          <input onChange={(e) => setGender(e.target.value)} type="text" placeholder="โปรดเขียนเพศของคุณ" />
         </div>
       </div>
     </div>

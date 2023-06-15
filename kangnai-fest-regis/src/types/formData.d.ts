@@ -1,11 +1,9 @@
 export interface FormRegisData {
     timestamp: string;
     id: string;
-    nickname: string;
     name: string;
-    surname: string;
-    dateOfBirth: string;
-    contact: string;
+    gender: string;
+    age: string;
     howDidYouFindUs: string;
     whatIsYourInterested: string;
 }
