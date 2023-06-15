@@ -37,3 +37,9 @@ export const emotionWords = {
     row4: ["กดดัน","เฉยเมย","ไร้ค่า","ไม่สำคัญ","ไม่มั่นคง"],
     row5: ["ไม่ยอมรับ","รู้สึกผิด","สั่นคลอน","ข้องใจ","เครียด"],
 }
+
+export const headFeel1 = "เริ่มจาก";
+export const headFeel2 = "วันนี้";
+export const headFeel3 = "คุณรู้สึกอย่างไร?";
+export const feelbad = "ไม่ดีเลย";
+export const feelgood = "ดีที่สุด";
