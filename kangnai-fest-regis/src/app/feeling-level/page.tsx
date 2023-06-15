@@ -22,16 +22,16 @@ const index = (props: Props) => {
       <div id="progress">
         <Image id="bg01" src={bg01} alt="bg-01" />
         <div id="progress-bar">
-          <ul id="progress-num">
-            <div className="step-line"></div>
-            <button className="step"></button>
-            <div className="step-line"></div>
-            <button className="step"></button>
-            <div className="step-line"></div>
-            <button className="step active"></button>
-            <div className="step-line"></div>
-            <button className="step"></button>
-          </ul>
+          <div id="progress-num">
+            <input
+              type="range"
+              min="1"
+              max="100"
+              value="50"
+              className="slider"
+              id="myRange"
+            />
+          </div>
         </div>
       </div>
       <Link href={"/emotional-check"}>
@@ -44,6 +44,8 @@ const index = (props: Props) => {
         <h2 id="head1">{headFeel1}</h2>
         <h2 id="head3">{headFeel3}</h2>
         <h2 id="head2">{headFeel2}</h2>
+        <h3 id="feel1">{feelbad}</h3>
+        <h3 id="feel2">{feelgood}</h3>
       </div>
     </div>
   );

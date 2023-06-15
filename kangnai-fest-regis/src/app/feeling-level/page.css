@@ -2,7 +2,7 @@
   margin: 0;
 }
 #progress {
-  position: fixed;
+  position: absolute;
   width: 100%;
   min-width: 428px;
   height: 100%;
@@ -10,56 +10,47 @@
   align-items: center;
 }
 
-#progress-bar {
-  position: absolute;
-  background: #6ebec7;
-  height: 5px;
-  top: 0;
+.slider {
+  appearance: none;
+  width: 100%;
+  height: 25px;
+  background: #d3d3d3;
+  outline: none;
+  opacity: 0.7;
+  transition: opacity 0.2s;
 }
-#progress-bar button {
-  border: none;
-  padding: 20px;
-  text-align: center;
-  text-decoration: none;
-  display: inline-block;
-  font-size: 16px;
-  margin: 4px 2px;
+
+#progress-num .slider {
+  position: absolute;
+  top: 470px;
+  left: 15px;
+  width: 300px;
+  height: 8px;
+  border-radius: 8px;
+  background: #6ebec7;
+  outline: none;
+  transition: opacity 0.2s;
+}
+
+.slider::-webkit-slider-thumb {
+  appearance: none;
+  width: 20px;
+  height: 20px;
   border-radius: 50%;
+  background: #6ebec7;
+  box-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
+  cursor: pointer;
 }
 
 #progress-num {
   position: absolute;
-  top: 476px;
   left: 46px;
+  top: 0;
   margin: 0;
   padding: 0;
   display: flex;
   justify-content: space-between;
 }
-
-#progress-num .step {
-  background-color: #ffffff;
-  text-align: center;
-
-  font-size: 14px;
-  position: relative;
-  z-index: 1;
-}
-
-#progress-num .step-line {
-  position: absolute;
-  align-items: center;
-  background-color: red;
-  font-weight: bold;
-  width: 156px;
-  padding: 8px;
-  border-radius: 40px;
-}
-
-#progress-num .step.active {
-  background-color: #6ebec7;
-}
-
 #progress-num::before {
   content: "";
   background-color: lightgray;
@@ -100,7 +91,7 @@
   font-size: 32px;
   font-weight: 500;
   top: 131px;
-  left: 160px;
+  left: 170px;
 }
 
 .text-container #head2 {
@@ -109,7 +100,7 @@
   font-size: 32px;
   font-weight: 500;
   top: 182px;
-  left: 75px;
+  left: 80px;
 }
 
 .text-container #head3 {
@@ -118,5 +109,21 @@
   font-size: 32px;
   font-weight: 500;
   top: 182px;
-  left: 127px;
+  left: 132px;
+}
+
+.text-container #feel1 {
+  color: #838aa3;
+  position: absolute;
+  font-size: 16px;
+  top: 504px;
+  left: 40px;
+}
+
+.text-container #feel2 {
+  color: #838aa3;
+  position: absolute;
+  font-size: 16px;
+  top: 504px;
+  left: 350px;
 }
