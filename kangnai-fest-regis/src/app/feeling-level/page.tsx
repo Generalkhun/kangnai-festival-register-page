@@ -3,7 +3,6 @@ import React from "react";
 import Image from "next/image";
 import "./page.css";
 import { NextButton } from "@/components/Button/button";
-import Slider from "@/components/Slider/slider";
 
 import bg01 from "/public/img/BG01.svg";
 import arrow from "/public/img/arrow.svg";
