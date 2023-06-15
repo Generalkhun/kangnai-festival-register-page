@@ -105,7 +105,7 @@ const RegisForm = function ({ onFormDataChange, isWalkin }: RegisFormProps) {
               id="dropIcon"
               src={dropIcon}
               alt="drop icon"
-              style={{ top: "190px" }}
+              style={{ top: "290px" }}
             />
           ) : (
             <Image id="dropIcon" src={dropIcon} alt="drop icon" />
@@ -135,7 +135,7 @@ const RegisForm = function ({ onFormDataChange, isWalkin }: RegisFormProps) {
               id="dropIcon2"
               src={dropIcon}
               alt="drop icon"
-              style={{ top: "290px" }}
+              style={{ top: "390px" }}
             />
           ) : (
             <Image id="dropIcon2" src={dropIcon} alt="drop icon" />
@@ -165,7 +165,7 @@ const RegisForm = function ({ onFormDataChange, isWalkin }: RegisFormProps) {
               id="dropIcon3"
               src={dropIcon}
               alt="drop icon"
-              style={{ top: "390px" }}
+              style={{ top: "490px" }}
             />
           ) : (
             <Image id="dropIcon3" src={dropIcon} alt="drop icon" />
