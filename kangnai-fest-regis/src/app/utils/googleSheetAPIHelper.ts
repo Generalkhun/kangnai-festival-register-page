@@ -5,7 +5,7 @@ import { values } from "lodash";
 
 /**@todo use generated key file on production (GOOGLE_SHEET_KEYFILE_PATH) instead of the one from local secrets */
 //const GOOGLE_SHEET_KEYFILE_PATH = '/tmp/googleSheetKeyFile.json'
-const SHEET_RANGE_ADD = 'MainPage!A1:I' // used to append a record
+const SHEET_RANGE_ADD = 'MainPage!A1:G' // used to append a record
 
 // This funtion is to connect googlesheet api
 const connectGoogleSheetsApi = async () => {
@@ -61,7 +61,7 @@ const transformToArrayTobeAddedToGGSheet = (formData: Object, expectedLength: nu
 export const saveFormToGGSheet = async (formData: any) => {
 
     // transform the to arrays format 
-    const tobeAddedDataArray = transformToArrayTobeAddedToGGSheet(formData, 9)
+    const tobeAddedDataArray = transformToArrayTobeAddedToGGSheet(formData, 7)
 
     // connect to the sheet 
     const sheets = await connectGoogleSheetsApi()

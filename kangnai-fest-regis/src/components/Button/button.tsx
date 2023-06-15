@@ -3,15 +3,23 @@ import "./button.css";
 
 type Props = {
   buttonText: string;
-};
-export const ProceedingButton = ({ buttonText }: Props) => {
-  return <button className="proceeding_btn">{buttonText}</button>;
+  onClick?: () => void
 };
 
-export const WalkInButton = ({ buttonText }: Props) => {
-  return <button className="walkin_btn">{buttonText}</button>;
+interface NextButtonProps {
+  buttonText: string;
+  onClick?: () => unknown
+  isDisabled?: boolean
+}
+export const ProceedingButton = ({ buttonText,onClick }: Props) => {
+  return <button onClick={onClick} className="proceeding_btn">{buttonText}</button>;
 };
 
-export const NextButton = ({ buttonText }: Props) => {
-  return <button className="next_btn">{buttonText}</button>;
+export const WalkInButton = ({ buttonText,onClick }: Props) => {
+  return <button onClick={onClick} className="walkin_btn">{buttonText}</button>;
+};
+
+export const NextButton = ({ buttonText, onClick, isDisabled }: NextButtonProps) => {
+
+  return isDisabled ? <button disabled={true} className="next_btn_disabled">{buttonText}</button> : <button onClick={onClick} className="next_btn">{buttonText}</button>;
 };

@@ -1,3 +1,4 @@
+"use client"
 import { ProceedingButton } from "@/components/Button/button";
 import Link from "next/link";
 import React, { useCallback, useState } from "react";
