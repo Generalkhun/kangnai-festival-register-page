@@ -3,12 +3,15 @@ import React from "react";
 import Image from "next/image";
 import "./page.css";
 
+import bg01 from "/public/img/BG01.svg";
+
 type Props = {};
 
 const index = (props: Props) => {
   return (
     <div>
       <div id="progress">
+        <Image src={bg01} alt="bg-01"></Image>
         <div id="progress-bar">
           <ul id="progress-num">
             <button className="step"></button>
