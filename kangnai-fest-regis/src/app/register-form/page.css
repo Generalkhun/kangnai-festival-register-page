@@ -12,9 +12,8 @@
 }
 
 .text-container {
-  position: absolute;
+  position: relative;
   top: 160px;
-  left: 130.5px;
 }
 
 .text-container h2 {
