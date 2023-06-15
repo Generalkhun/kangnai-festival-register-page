@@ -39,13 +39,27 @@ const RegisForm = function ({ onFormDataChange, isWalkin }: RegisFormProps) {
 
   return (
     <div className="regisform-container">
-      {!isWalkin && <p>กรุณากรอกชื่อตามที่ได้ลงทะเบียนมาล่วงหน้า</p>}
-      <input
-        className="name-input"
-        type="text"
-        onChange={(e) => setName(e.target.value)}
-        placeholder="กรอกชื่อที่ลงทะเบียนล่วงหน้า"
-      />
+      {!isWalkin ? (
+        <p>กรุณากรอกชื่อตามที่ได้ลงทะเบียนมาล่วงหน้า</p>
+      ) : (
+        <p>ชื่อ</p>
+      )}
+
+      {!isWalkin ? (
+        <input
+          className="name-input"
+          type="text"
+          onChange={(e) => setName(e.target.value)}
+          placeholder="กรอกชื่อที่ลงทะเบียนล่วงหน้า"
+        />
+      ) : (
+        <input
+          className="name-input"
+          type="text"
+          onChange={(e) => setName(e.target.value)}
+          placeholder="โปรดกรอกชื่อของท่าน"
+        />
+      )}
       {isWalkin && (
         <>
           <label className="gender" htmlFor="gender">
