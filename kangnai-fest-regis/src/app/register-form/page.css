@@ -18,11 +18,13 @@
 }
 
 .text-container h2 {
+  position: relative;
   color: #4b9199;
   font-size: 40px;
   font-weight: 600;
   line-height: 64px;
   text-align: center;
+  right: 60px;
 }
 
 #bg01 {

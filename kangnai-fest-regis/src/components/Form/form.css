@@ -5,6 +5,20 @@
   color: #838aa3;
   line-height: 30px;
   font-weight: 600;
+  align-items: center;
+}
+
+.name-input {
+  color: #838aa3;
+  background-color: #fff;
+  width: 348px;
+  height: 53px;
+  border-style: none;
+  font-size: 16px;
+
+  padding-left: 20px;
+  margin-top: 10px;
+  border-radius: 8px;
 }
 
 .checkbox-container {
