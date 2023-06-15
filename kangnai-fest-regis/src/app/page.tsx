@@ -39,10 +39,10 @@ export default function Home() {
           <h2>{headText2}</h2>
         </div>
         <div className="btn-container">
-          <Link href={"/register-form"}>
+          <Link href={"/introduce-vol.1"}>
             <ProceedingButton buttonText={regisBtnText} />
           </Link>
-          <Link href={"/introduce-vol.1"}>
+          <Link href={"/register-form"}>
             <WalkInButton buttonText={walkInBtnText} />
           </Link>
         </div>
