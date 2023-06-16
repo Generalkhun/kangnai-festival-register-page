@@ -2,7 +2,7 @@
 import Link from "next/link";
 import React from "react";
 import Image from "next/image";
-import "./page.css";
+import "./introduce.css";
 
 import { NextButton } from "@/components/Button/button";
 

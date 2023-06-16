@@ -99,11 +99,6 @@ const Page = () => {
         <div className="nextBtn-container">
           <NextButton isDisabled={disableSubmit} onClick={(e: React.MouseEvent<HTMLButtonElement>) => onSubmitRegisForm(e)} buttonText={nextBtnText} />
           <Image id="arrow" src={arrow} alt="arrow" />
-          {/* <Link href={"/introduce"}>
-            <a href={"/introduce"}>
-              
-            </a>
-          </Link> */}
         </div>
         <div className="text-container">
           <h2>{headRegis}</h2>
