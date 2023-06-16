@@ -1,7 +1,6 @@
 "use client";
 
 import { NextButton } from "@/components/Button/button";
-import { useRouter } from 'next/navigation'
 import { headRegis, nextBtnText } from "@/constants";
 
 import bg01 from "/public/img/bg01.svg";
@@ -18,7 +17,6 @@ import RegisForm from "@/components/Form/form";
 
 const Page = () => {
   const [disableSubmit, setDisableSubmit] = useState<boolean>(false)
-  const router = useRouter()
   const [formData, setFormData] = useState<FormRegisData>({
     timestamp: '',
     id: '',
@@ -40,8 +38,8 @@ const Page = () => {
       ...updatedFormData,
     }))
   }
-  const onSubmitRegisForm = () => {
-    
+  const onSubmitRegisForm = (e: React.MouseEvent<HTMLButtonElement>) => {
+    e.preventDefault();
     setDisableSubmit(true)
     var tzoffset = (new Date()).getTimezoneOffset() * 60000; //offset in milliseconds
     var localISOTime = (new Date(Date.now() - tzoffset)).toISOString().slice(0, -1)
@@ -52,6 +50,7 @@ const Page = () => {
         timestamp: localISOTime,
       })
       .then(res => {
+        console.log("🚀 ~ file: page.tsx:59 ~ onSubmitRegisForm ~ res:", res)
         setDisableSubmit(false)
       })
       .catch(err => {
@@ -98,7 +97,7 @@ const Page = () => {
         </div>
         <div className="nextBtn-container">
           <Link href={"/introduce"}>
-            <NextButton isDisabled={disableSubmit} onClick={onSubmitRegisForm} buttonText={nextBtnText} />
+            <NextButton isDisabled={disableSubmit} onClick={(e: React.MouseEvent<HTMLButtonElement>) => onSubmitRegisForm(e)} buttonText={nextBtnText} />
             <Image id="arrow" src={arrow} alt="arrow" />
           </Link>
         </div>

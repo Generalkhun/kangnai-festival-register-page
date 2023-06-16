@@ -8,7 +8,7 @@ type Props = {
 
 interface NextButtonProps {
   buttonText: string;
-  onClick?: () => unknown
+  onClick?: (e:any) => unknown
   isDisabled?: boolean
 }
 export const ProceedingButton = ({ buttonText, onClick }: Props) => {
