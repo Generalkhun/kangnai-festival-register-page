@@ -33,48 +33,136 @@ const Page = () => {
     const [isLoading, setIsLoading] = useState<boolean>(true)
     const [cardNumber, setCardNumber] = useState<number>(0)
     const [cardContent, setCardContent] = useState<string>('')
-    const renderCard = (cardNumber: number) => {
+    const renderCardContent = (content:string) => (
+        <div style={{
+            position: "absolute",
+            top: "620px",
+            left: "5px",
+            padding: "0px 90px",
+            textAlign: "center",
+            fontWeight: "600px",
+            fontSize: "20px",
+            lineHeight: "30px",
+            maxWidth: "250px",
+        }}>
+            <Image id="underline" src={whiteUnderline} alt="underline" />
+            <br />
+            {cardContent}
+        </div>
+    )
+    const renderCard = (cardNumber: number,cardContent:string) => {
         if (isLoading) {
             return;
         }
         switch (cardNumber) {
             case 1:
-                return <Image id="quality-card-pic" src={quality01} alt="quality" />
+                return <>
+                    <Image id="quality-card" src={quality_card} alt="quality_card" />
+                    <Image id="quality-card-pic" src={quality01} alt="quality" />
+                    {renderCardContent(cardContent)}
+                </>
             case 2:
-                return <Image id="quality-card-pic" src={quality02} alt="quality" />
+                return <>
+                <Image id="quality-card" src={quality_card} alt="quality_card" />
+                <Image id="quality-card-pic" src={quality02} alt="quality" />
+                {renderCardContent(cardContent)}
+            </>
             case 3:
-                return <Image id="quality-card-pic" src={quality03} alt="quality" />
+                return <>
+                <Image id="quality-card" src={quality_card} alt="quality_card" />
+                <Image id="quality-card-pic" src={quality03} alt="quality" />
+                {renderCardContent(cardContent)}
+            </>
             case 4:
-                return <Image id="quality-card-pic" src={quality04} alt="quality" />
+                return <>
+                <Image id="quality-card" src={quality_card} alt="quality_card" />
+                <Image id="quality-card-pic" src={quality04} alt="quality" />
+                {renderCardContent(cardContent)}
+            </>
             case 5:
-                return <Image id="quality-card-pic" src={quality05} alt="quality" />
+                return <>
+                <Image id="quality-card" src={quality_card} alt="quality_card" />
+                <Image id="quality-card-pic" src={quality05} alt="quality" />
+                {renderCardContent(cardContent)}
+            </>
             case 6:
-                return <Image id="quality-card-pic" src={quality06} alt="quality" />
+                return <>
+                <Image id="quality-card" src={quality_card} alt="quality_card" />
+                <Image id="quality-card-pic" src={quality06} alt="quality" />
+                {renderCardContent(cardContent)}
+            </>
             case 7:
-                return <Image id="quality-card-pic" src={quality07} alt="quality" />
+                return <>
+                <Image id="quality-card" src={quality_card} alt="quality_card" />
+                <Image id="quality-card-pic" src={quality07} alt="quality" />
+                {renderCardContent(cardContent)}
+            </>
             case 8:
-                return <Image id="quality-card-pic" src={quality08} alt="quality" />
+                return <>
+                <Image id="quality-card" src={quality_card} alt="quality_card" />
+                <Image id="quality-card-pic" src={quality08} alt="quality" />
+                {renderCardContent(cardContent)}
+            </>
             case 9:
-                return <Image id="quality-card-pic" src={quality09} alt="quality" />
+                return <>
+                <Image id="quality-card" src={quality_card} alt="quality_card" />
+                <Image id="quality-card-pic" src={quality09} alt="quality" />
+                {renderCardContent(cardContent)}
+            </>
             case 10:
-                return <Image id="quality-card-pic" src={quality10} alt="quality" />
+                return <>
+                <Image id="quality-card" src={quality_card} alt="quality_card" />
+                <Image id="quality-card-pic" src={quality10} alt="quality" />
+                {renderCardContent(cardContent)}
+            </>
             case 11:
-                return <Image id="quality-card-pic" src={quality11} alt="quality" />
+                return <>
+                <Image id="quality-card" src={quality_card} alt="quality_card" />
+                <Image id="quality-card-pic" src={quality11} alt="quality" />
+                {renderCardContent(cardContent)}
+            </>
             case 12:
-                return <Image id="quality-card-pic" src={quality12} alt="quality" />
+                return <>
+                <Image id="quality-card" src={quality_card} alt="quality_card" />
+                <Image id="quality-card-pic" src={quality12} alt="quality" />
+                {renderCardContent(cardContent)}
+            </>
             case 13:
-                return <Image id="quality-card-pic" src={quality13} alt="quality" />
+                return <>
+                <Image id="quality-card" src={quality_card} alt="quality_card" />
+                <Image id="quality-card-pic" src={quality13} alt="quality" />
+                {renderCardContent(cardContent)}
+            </>
             case 14:
-                return <Image id="quality-card-pic" src={quality14} alt="quality" />
+                return <>
+                <Image id="quality-card" src={quality_card} alt="quality_card" />
+                <Image id="quality-card-pic" src={quality14} alt="quality" />
+                {renderCardContent(cardContent)}
+            </>
             case 15:
-                return <Image id="quality-card-pic" src={quality15} alt="quality" />
+                return <>
+                <Image id="quality-card" src={quality_card} alt="quality_card" />
+                <Image id="quality-card-pic" src={quality15} alt="quality" />
+                {renderCardContent(cardContent)}
+            </>
             case 16:
-                return <Image id="quality-card-pic" src={quality16} alt="quality" />
+                return <>
+                <Image id="quality-card" src={quality_card} alt="quality_card" />
+                <Image id="quality-card-pic" src={quality16} alt="quality" />
+                {renderCardContent(cardContent)}
+            </>
             case 17:
-                return <Image id="quality-card-pic" src={quality17} alt="quality" />
+                return <>
+                <Image id="quality-card" src={quality_card} alt="quality_card" />
+                <Image id="quality-card-pic" src={quality17} alt="quality" />
+                {renderCardContent(cardContent)}
+            </>
             case 18:
-                return <Image id="quality-card-pic" src={quality18} alt="quality" />
-
+                return <>
+                <Image id="quality-card" src={quality_card} alt="quality_card" />
+                <Image id="quality-card-pic" src={quality18} alt="quality" />
+                {renderCardContent(cardContent)}
+            </>
         }
     }
     useEffect(() => {
@@ -132,9 +220,9 @@ const Page = () => {
                 </div>}
 
                 {!isLoading && <div>
-                    <Image id="quality-card" src={quality_card} alt="quality_card" />
-                    {renderCard(cardNumber)}
-                    <div style={{
+                    {/* <Image id="quality-card" src={quality_card} alt="quality_card" /> */}
+                    {renderCard(cardNumber,cardContent)}
+                    {/* <div style={{
                         position: "absolute",
                         top: "620px",
                         left: "5px",
@@ -148,7 +236,7 @@ const Page = () => {
                         <Image id="underline" src={whiteUnderline} alt="underline" />
                         <br />
                         {cardContent}
-                    </div>
+                    </div> */}
                     <Link href={'/'}>
                         <button
                             style={{
