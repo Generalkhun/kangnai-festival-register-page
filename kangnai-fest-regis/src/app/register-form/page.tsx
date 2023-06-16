@@ -51,7 +51,6 @@ const Page = () => {
       })
       .then(res => {
         setDisableSubmit(false)
-        window.location.href = '/introduce'
       })
       .catch(err => {
         console.log(err.message);
