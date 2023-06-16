@@ -1,14 +1,14 @@
 "use client";
 
 import { NextButton } from "@/components/Button/button";
-import { headRegis, nextBtnText } from "@/constants";
+import { headRegis, headConfirmRegis, nextBtnText } from "@/constants";
 
 import bg01 from "/public/img/bg01.svg";
 import arrow from "/public/img/arrow.svg";
 import miniLogo from "public/img/miniLogo.svg";
 
 import { FormRegisData } from "@/types/formData";
-import axios from 'axios'
+import axios from "axios";
 import Link from "next/link";
 import Image from "next/image";
 import React, { useEffect, useState } from "react";
@@ -16,49 +16,50 @@ import "./page.css";
 import RegisForm from "@/components/Form/form";
 
 const index = () => {
-  const [disableSubmit, setDisableSubmit] = useState<boolean>(false)
+  const [disableSubmit, setDisableSubmit] = useState<boolean>(false);
 
   const [formData, setFormData] = useState<FormRegisData>({
-    timestamp: '',
-    id: '',
-    name: '',
-    gender: '',
-    age: '',
-    howDidYouFindUs: '',
-    whatIsYourInterested: ''
-  })
-  const [isWalkin, setIsWalkin] = useState(false)
+    timestamp: "",
+    id: "",
+    name: "",
+    gender: "",
+    age: "",
+    howDidYouFindUs: "",
+    whatIsYourInterested: "",
+  });
+  const [isWalkin, setIsWalkin] = useState(false);
   // set a page for different user
   useEffect(() => {
-    const regisAs = window.localStorage.getItem("regisAs")
-    setIsWalkin(regisAs === "walk-in" ? true : false)
-  })
+    const regisAs = window.localStorage.getItem("regisAs");
+    setIsWalkin(regisAs === "walk-in" ? true : false);
+  });
   const onFormDataChange = (updatedFormData: Record<any, any>) => {
     setFormData((prev: FormRegisData) => ({
       ...prev,
       ...updatedFormData,
-    }))
-  }
+    }));
+  };
   const onSubmitRegisForm = () => {
-    setDisableSubmit(true)
-    var tzoffset = (new Date()).getTimezoneOffset() * 60000; //offset in milliseconds
-    var localISOTime = (new Date(Date.now() - tzoffset)).toISOString().slice(0, -1)
+    setDisableSubmit(true);
+    var tzoffset = new Date().getTimezoneOffset() * 60000; //offset in milliseconds
+    var localISOTime = new Date(Date.now() - tzoffset)
+      .toISOString()
+      .slice(0, -1);
     axios
       .post("/api/saveForm", {
         ...formData,
         id: Math.random() * 1000,
         timestamp: localISOTime,
       })
-      .then(res => {
-        setDisableSubmit(false)
+      .then((res) => {
+        setDisableSubmit(false);
       })
-      .catch(err => {
+      .catch((err) => {
         console.log(err.message);
       });
-  }
+  };
 
   useEffect(() => {
-
     // walk in case, need every field to not empty
     if (isWalkin) {
       if (
@@ -74,16 +75,14 @@ const index = () => {
     }
 
     // pre-regis case, name should be input
-    if (
-      !formData.name
-    ) {
+    if (!formData.name) {
       setDisableSubmit(true);
       return;
     }
 
     //eneable the button when everything ok
     setDisableSubmit(false);
-  }, [formData])
+  }, [formData]);
 
   return (
     <div>
@@ -96,12 +95,20 @@ const index = () => {
         </div>
         <div className="nextBtn-container">
           <Link href={"/feeling-level"}>
-            <NextButton isDisabled={disableSubmit} onClick={onSubmitRegisForm} buttonText={nextBtnText} />
+            <NextButton
+              isDisabled={disableSubmit}
+              onClick={onSubmitRegisForm}
+              buttonText={nextBtnText}
+            />
             <Image id="arrow" src={arrow} alt="arrow" />
           </Link>
         </div>
         <div className="text-container">
-          <h2>{headRegis}</h2>
+          {isWalkin ? (
+            <h2 style={{ right: "0px" }}>{headRegis}</h2>
+          ) : (
+            <h2 style={{ fontSize: "37px" }}>{headConfirmRegis}</h2>
+          )}
         </div>
       </div>
     </div>
