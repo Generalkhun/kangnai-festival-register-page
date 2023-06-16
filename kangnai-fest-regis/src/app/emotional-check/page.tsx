@@ -10,9 +10,7 @@ import { emotionalPageHeaderSubText, emotionalPageHeaderText1, emotionalPageHead
 import { EmotionCircle } from "@/components/EmotionCircle";
 import { UseCustomEmotionModal } from "./useCustomEmotionModal";
 
-type Props = {};
-
-const Page = (props: Props) => {
+const Page = () => {
     const [selectedEmotionWord, setSelectedEmotionWord] = useState<string>('')
     const [addedWord, setAddedWord] = useState<string>("")
     const addCustomEmotionWord = (customWord: string) => {

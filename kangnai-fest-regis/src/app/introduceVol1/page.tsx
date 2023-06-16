@@ -19,7 +19,7 @@ import arrow from "/public/img/arrow.svg";
 
 type Props = {};
 
-const index = (props: Props) => {
+const Page = (props: Props) => {
   return (
     <div>
       <div className="intro-container">
@@ -43,4 +43,4 @@ const index = (props: Props) => {
   );
 };
 
-export default index;
+export default Page;
