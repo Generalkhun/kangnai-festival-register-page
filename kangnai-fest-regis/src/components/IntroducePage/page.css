@@ -61,11 +61,11 @@
 
 .intro-nextBtn-container {
   position: absolute;
-  bottom: 5%;
+  bottom: 180px;
 }
 
 #intro-arrow {
   position: absolute;
   top: 20px;
-  left: 290px;
+  left: 263px;
 }
