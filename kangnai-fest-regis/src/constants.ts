@@ -27,7 +27,7 @@ export const headRegis = "ลงทะเบียน";
 export const emotionalPageHeaderText1 = `คำไหนที่อธิบาย`;
 export const emotionalPageHeaderText2 = `ความพัง`;
 export const emotionalPageHeaderText3 = `ที่มาทักทายคุณมากที่สุดใน`;
-export const emotionalPageHeaderText4 = `ช่วงนี`;
+export const emotionalPageHeaderText4 = `ช่วงนี้`;
 export const emotionalPageHeaderSubText = `[คลิกที่วงกลมเพื่อเลือก]`;
 //emotion words
 export const emotionWords = {
