@@ -103,7 +103,7 @@ const index = () => {
             <Image id="arrow" src={arrow} alt="arrow" />
           </Link>
         </div>
-        <div className="text-container">
+        <div className="text-regis-container">
           {isWalkin ? (
             <h2>{headRegis}</h2>
           ) : (

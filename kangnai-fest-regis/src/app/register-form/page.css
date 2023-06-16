@@ -11,20 +11,19 @@
   align-items: center;
 }
 
-.text-container {
+.text-regis-container {
   position: absolute;
   top: 160px;
   left: 130.5px;
 }
 
-.text-container h2 {
+.text-regis-container h2 {
   position: relative;
   color: #4b9199;
   font-size: 40px;
   font-weight: 600;
   line-height: 64px;
   text-align: center;
-  right: 60px;
 }
 
 #bg01 {
