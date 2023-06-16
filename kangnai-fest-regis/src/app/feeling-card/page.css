@@ -37,6 +37,11 @@
   z-index: 2;
 }
 
+#underline {
+  position: absolute;
+  left: 120px;
+}
+
 .loader-bar {
   position: absolute;
   top: 509px;
@@ -52,15 +57,17 @@
 .loading-text {
   color: #4b9199;
   font-weight: 500px;
-  position: absolute;
+  position: relative;
   top: 439px;
   left: 105.5px;
 }
+
 .headCard-text {
   position: relative;
   color: #4b9199;
   font-size: 20px;
   text-align: center;
+  left: -20px;
 }
 
 @keyframes loaderAnimation {

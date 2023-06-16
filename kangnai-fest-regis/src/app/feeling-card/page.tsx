@@ -23,6 +23,7 @@ import quality15 from "public/img/quality15.svg";
 import quality16 from "public/img/quality16.svg";
 import quality17 from "public/img/quality17.svg";
 import quality18 from "public/img/quality18.svg";
+import underline from "public/img/underline.svg";
 import Image from "next/image";
 import "./page.css";
 import {
@@ -110,11 +111,7 @@ const index = () => {
         <Image id="miniLogo" src={miniLogo} alt="mini logo" />
         {isLoading && (
           <div>
-            <div
-              style={{
-                
-              }}
-            >
+            <div style={{}}>
               <div className="loading-text">{loadText1}</div>
               <div className="loading-text">{loadText2}</div>
             </div>
@@ -141,10 +138,17 @@ const index = () => {
             <div
               style={{
                 position: "absolute",
-                top: "629px",
-                left: "50px",
+                top: "620px",
+                left: "5px",
+                padding: "0px 90px",
+                textAlign: "center",
+                fontWeight: "600px",
+                fontSize: "20px",
+                lineHeight: "30px",
               }}
             >
+              <Image id="underline" src={underline} alt="underline" />
+              <br />
               {cardContent}
             </div>
             <Link href={"/"}>
