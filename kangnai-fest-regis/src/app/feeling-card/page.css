@@ -51,7 +51,7 @@
   height: 4px;
   background-color: #8dd2da;
   border-radius: 8px;
-  animation: loaderAnimation 3s linear forwards;
+  animation: loaderAnimation 6s linear forwards;
 }
 
 .loading-text {
