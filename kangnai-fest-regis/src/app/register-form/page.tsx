@@ -15,7 +15,7 @@ import React, { useEffect, useState } from "react";
 import "./page.css";
 import RegisForm from "@/components/Form/form";
 
-const index = () => {
+const Page = () => {
   const [disableSubmit, setDisableSubmit] = useState<boolean>(false)
 
   const [formData, setFormData] = useState<FormRegisData>({
@@ -108,4 +108,4 @@ const index = () => {
   );
 };
 
-export default index;
+export default Page;

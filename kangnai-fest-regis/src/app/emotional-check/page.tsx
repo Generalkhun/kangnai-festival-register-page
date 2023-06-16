@@ -8,11 +8,11 @@ import bg01 from "/public/img/bg01.svg";
 import underliner from "/public/img/underliner.svg";
 import { emotionalPageHeaderSubText, emotionalPageHeaderText1, emotionalPageHeaderText2, emotionalPageHeaderText3, emotionalPageHeaderText4, emotionWords } from "@/constants";
 import { EmotionCircle } from "@/components/EmotionCircle";
-import { useCustomEmotionModal } from "./useCustomEmotionModal";
+import { UseCustomEmotionModal } from "./useCustomEmotionModal";
 
 type Props = {};
 
-const index = (props: Props) => {
+const Page = (props: Props) => {
     const [selectedEmotionWord, setSelectedEmotionWord] = useState<string>('')
     const [addedWord, setAddedWord] = useState<string>("")
     const addCustomEmotionWord = (customWord: string) => {
@@ -30,7 +30,7 @@ const index = (props: Props) => {
         />
     ), [selectedEmotionWord, onSelectEmotion])
 
-    const { renderCustomEmotionModal,isShowCustomEmotionModal } = useCustomEmotionModal({
+    const { renderCustomEmotionModal,isShowCustomEmotionModal } = UseCustomEmotionModal({
         selectedEmotionWord,
         setSelectedEmotionWord,
         addCustomEmotionWord,
@@ -104,4 +104,4 @@ const index = (props: Props) => {
     );
 };
 
-export default index;
+export default Page;

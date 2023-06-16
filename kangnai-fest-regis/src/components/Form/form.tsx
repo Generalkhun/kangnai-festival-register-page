@@ -21,19 +21,19 @@ const RegisForm = function ({ onFormDataChange, isWalkin }: RegisFormProps) {
   // form data update
   useEffect(() => {
     onFormDataChange({ name })
-  }, [name])
+  }, [name,onFormDataChange])
   useEffect(() => {
     onFormDataChange({ age: selectedAge })
-  }, [selectedAge])
+  }, [selectedAge,onFormDataChange])
   useEffect(() => {
     onFormDataChange({ howDidYouFindUs: selectedHow })
-  }, [selectedHow])
+  }, [selectedHow,onFormDataChange])
   useEffect(() => {
     onFormDataChange({ whatIsYourInterested: selectedInterested })
-  }, [selectedInterested])
+  }, [selectedInterested,onFormDataChange])
   useEffect(() => {
     onFormDataChange({ gender })
-  }, [gender])
+  }, [gender,onFormDataChange])
   const openHandler = () => {
     setIsOpened((isOpened) => !isOpened);
   };

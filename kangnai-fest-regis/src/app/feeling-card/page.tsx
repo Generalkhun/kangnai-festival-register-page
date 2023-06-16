@@ -28,7 +28,7 @@ import './page.css'
 import { cardContentCreator } from '@/constants';
 
 
-const index = () => {
+const Page = () => {
     const [isLoading, setIsLoading] = useState<boolean>(true)
     const [cardNumber, setCardNumber] = useState<number>(0)
     const [cardContent, setCardContent] = useState<string>('')
@@ -167,4 +167,4 @@ const index = () => {
     )
 }
 
-export default index
+export default Page

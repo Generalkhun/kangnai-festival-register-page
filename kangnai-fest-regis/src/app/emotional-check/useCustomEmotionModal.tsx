@@ -11,7 +11,7 @@ interface UseCustomEmotionModalResult {
     isShowCustomEmotionModal: boolean;
 }
 
-export const useCustomEmotionModal = ({
+export const UseCustomEmotionModal = ({
     selectedEmotionWord,
     setSelectedEmotionWord,
     addCustomEmotionWord,

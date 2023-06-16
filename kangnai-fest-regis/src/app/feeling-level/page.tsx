@@ -19,7 +19,7 @@ import { headFeel3 } from "@/constants";
 import { feelbad } from "@/constants";
 import { feelgood } from "@/constants";
 
-const index = () => {
+const Page = () => {
   const [level, setLevel] = useState(1);
 
   const handleSlide = (event: any) => {
@@ -83,4 +83,4 @@ const index = () => {
   );
 };
 
-export default index;
+export default Page;
