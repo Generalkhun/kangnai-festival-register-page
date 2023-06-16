@@ -19,8 +19,8 @@ import birds from "/public/img/birds.svg";
 import bgWhite from "/public/img/bg-white.svg";
 import human from "/public/img/human.svg";
 import breeze from "/public/img/breeze.svg";
-import cloud1 from "/public/img/cloud1.svg";
-import cloud2 from "/public/img/cloud2.svg";
+import cloud1 from "/public/img/Cloud1.svg";
+import cloud2 from "/public/img/Cloud2.svg";
 //----------------------------------------------//
 
 export default function Home() {
