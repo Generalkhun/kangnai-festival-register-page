@@ -107,7 +107,9 @@ const index = () => {
           {isWalkin ? (
             <h2>{headRegis}</h2>
           ) : (
-            <h2 style={{ fontSize: "37px" }}>{headConfirmRegis}</h2>
+            <h2 style={{ left: "60px", fontSize: "37px" }}>
+              {headConfirmRegis}
+            </h2>
           )}
         </div>
       </div>
