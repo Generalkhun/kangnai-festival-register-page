@@ -10,12 +10,12 @@
   align-items: center;
 }
 
-.headFeel-container {
+.text-container {
   text-align: center;
   top: 131px;
 }
 
-.headFeel-container #head1 {
+.text-container #head1 {
   position: fixed;
   color: #bf83cb;
   font-size: 32px;
@@ -24,7 +24,7 @@
   left: 170px;
 }
 
-.headFeel-container #head2 {
+.text-container #head2 {
   position: fixed;
   color: #4b9199;
   font-size: 32px;
@@ -33,7 +33,7 @@
   left: 80px;
 }
 
-.headFeel-container #head3 {
+.text-container #head3 {
   position: fixed;
   color: #bf83cb;
   font-size: 32px;
@@ -42,7 +42,7 @@
   left: 132px;
 }
 
-.headFeel-container #feel1 {
+.text-container #feel1 {
   color: #838aa3;
   position: absolute;
   font-size: 16px;
@@ -51,7 +51,7 @@
   left: 40px;
 }
 
-.headFeel-container #feel2 {
+.text-container #feel2 {
   color: #838aa3;
   position: absolute;
   font-size: 16px;
@@ -78,7 +78,7 @@
   height: 100%;
 }
 
-#emo-happy {
+.emo-container {
   position: absolute;
   top: 280.97px;
   left: 151.04px;
