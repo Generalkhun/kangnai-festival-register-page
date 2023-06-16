@@ -52,6 +52,15 @@
 .loading-text {
   color: #4b9199;
   font-weight: 500px;
+  position: absolute;
+  top: 439px;
+  left: 105.5px;
+}
+.headCard-text {
+  position: relative;
+  color: #4b9199;
+  font-size: 20px;
+  text-align: center;
 }
 
 @keyframes loaderAnimation {

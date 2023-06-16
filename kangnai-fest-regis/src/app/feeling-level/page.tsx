@@ -69,7 +69,7 @@ const index = () => {
           <Image id="arrow" src={arrow} alt="arrow" />
         </div>
       </Link>
-      <div className="text-container">
+      <div className="text-feel-container">
         <h2 id="head1">{headFeel1}</h2>
         <h2 id="head3">{headFeel3}</h2>
         <h2 id="head2">{headFeel2}</h2>

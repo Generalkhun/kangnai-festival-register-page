@@ -25,7 +25,13 @@ import quality17 from "public/img/quality17.svg";
 import quality18 from "public/img/quality18.svg";
 import Image from "next/image";
 import "./page.css";
-import { cardContentCreator, loadText1, loadText2 } from "@/constants";
+import {
+  cardContentCreator,
+  headCard1,
+  headCard2,
+  loadText1,
+  loadText2,
+} from "@/constants";
 
 const index = () => {
   const [isLoading, setIsLoading] = useState<boolean>(true);
@@ -106,9 +112,7 @@ const index = () => {
           <div>
             <div
               style={{
-                position: "absolute",
-                top: "439px",
-                left: "105.5px",
+                
               }}
             >
               <div className="loading-text">{loadText1}</div>
@@ -125,8 +129,8 @@ const index = () => {
               left: "105.5px",
             }}
           >
-            <div>ขอบคุณสำหรับความพังที่แชร์ให้กัน</div>
-            <div>เราขอมอบสิ่งนี้ให้คุณ</div>
+            <div className="headCard-text">{headCard1}</div>
+            <div className="headCard-text">{headCard2}</div>
           </div>
         )}
 

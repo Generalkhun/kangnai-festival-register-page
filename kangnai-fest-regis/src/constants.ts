@@ -85,5 +85,9 @@ export const cardContentCreator = (
   }
 };
 
+export const headCard1 = "ขอบคุณสำหรับความพังที่แชร์ให้กัน";
+export const headCard2 = "เราขอมอบสิ่งนี้ให้คุณ";
+
+// Loading page
 export const loadText1 = "ความพังเป็นส่วนหนึ่งของการเติบโต";
 export const loadText2 = "อย่ากลัวที่จะแวะทักทายเขาบ่อย ๆ";
