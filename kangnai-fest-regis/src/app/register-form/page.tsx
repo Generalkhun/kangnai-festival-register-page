@@ -51,6 +51,7 @@ const Page = () => {
       })
       .then(res => {
         setDisableSubmit(false)
+        window.location.href = '/introduce'
       })
       .catch(err => {
         console.log(err.message);
@@ -95,12 +96,14 @@ const Page = () => {
           <RegisForm isWalkin={isWalkin} onFormDataChange={onFormDataChange} />
         </div>
         <div className="nextBtn-container">
-          <Link href={"/introduce"}>
+          {/* <Link href={"/introduce"}>
             <a href={"/introduce"}>
               <NextButton isDisabled={disableSubmit} onClick={(e: React.MouseEvent<HTMLButtonElement>) => onSubmitRegisForm(e)} buttonText={nextBtnText} />
               <Image id="arrow" src={arrow} alt="arrow" />
             </a>
-          </Link>
+          </Link> */}
+          <NextButton isDisabled={disableSubmit} onClick={(e: React.MouseEvent<HTMLButtonElement>) => onSubmitRegisForm(e)} buttonText={nextBtnText} />
+          <Image id="arrow" src={arrow} alt="arrow" />
         </div>
         <div className="text-container">
           <h2>{headRegis}</h2>
