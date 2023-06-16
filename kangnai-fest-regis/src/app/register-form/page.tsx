@@ -41,7 +41,7 @@ const Page = () => {
     }))
   }
   const onSubmitRegisForm = () => {
-    router.push('/feeling-level');
+    router.push('/introduce-vol.1');
     setDisableSubmit(true)
     var tzoffset = (new Date()).getTimezoneOffset() * 60000; //offset in milliseconds
     var localISOTime = (new Date(Date.now() - tzoffset)).toISOString().slice(0, -1)
@@ -97,7 +97,7 @@ const Page = () => {
           <RegisForm isWalkin={isWalkin} onFormDataChange={onFormDataChange} />
         </div>
         <div className="nextBtn-container">
-          <Link href={"/feeling-level"}>
+          <Link href={"/introduce-vol.1"}>
             <NextButton isDisabled={disableSubmit} onClick={onSubmitRegisForm} buttonText={nextBtnText} />
             <Image id="arrow" src={arrow} alt="arrow" />
           </Link>
