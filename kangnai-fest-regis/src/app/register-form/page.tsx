@@ -2,7 +2,6 @@
 
 import { NextButton } from "@/components/Button/button";
 import { headRegis, nextBtnText } from "@/constants";
-import { useRouter } from 'next/router';
 
 import bg01 from "/public/img/bg01.svg";
 import arrow from "/public/img/arrow.svg";
@@ -17,7 +16,6 @@ import "./page.css";
 import RegisForm from "@/components/Form/form";
 
 const Page = () => {
-  const router = useRouter();
   const [disableSubmit, setDisableSubmit] = useState<boolean>(false)
   const [formData, setFormData] = useState<FormRegisData>({
     timestamp: '',
@@ -53,7 +51,6 @@ const Page = () => {
       })
       .then(res => {
         setDisableSubmit(false)
-        typeof window !== 'undefined' && router.push('/introduce');
       })
       .catch(err => {
         console.log(err.message);
