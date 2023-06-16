@@ -176,9 +176,12 @@ const RegisForm = function ({ onFormDataChange, isWalkin }: RegisFormProps) {
           <option id="option_feel" value="" disabled hidden>
             โปรดเลือก
           </option>
-          <option value="workshop">Workshop</option>
-          <option value="workshop2">Workshop2</option>
-          <option value="workshop3">workshop3</option>
+          <option value="สนใจบูธที่มาออกงาน">สนใจบูธที่มาออกงาน</option>
+          <option value="สนใจเข้าร่วมเวิร์คช็อป">สนใจเข้าร่วมเวิร์คช็อป</option>
+          <option value="สนใจกิจกรรมกลางที่ Free space">สนใจกิจกรรมกลางที่ Free space</option>
+          <option value="ชอบแนวคิด และ/หรือ รูปแบบงาน">ชอบแนวคิด และ/หรือ รูปแบบงาน</option>
+          <option value="สนใจเรียนรู้โลกภายใน จิตใจ จิตวิญญาณ">สนใจเรียนรู้โลกภายใน จิตใจ จิตวิญญาณ</option>
+          <option value="เคยเข้าร่วม ข้ า ง ใ น เฟสติวัล จึงติดตามต่อ">เคยเข้าร่วม ข้ า ง ใ น เฟสติวัล จึงติดตามต่อ</option>
         </select>
       </>}
     </div>
