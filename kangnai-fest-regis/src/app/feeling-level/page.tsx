@@ -5,12 +5,12 @@ import Image from "next/image";
 import "./page.css";
 import { NextButton } from "@/components/Button/button";
 
-import bg01 from "/public/img/BG01.svg";
-import arrow from "/public/img/arrow.svg";
-import unhappy from "/public/img/unhappy.svg";
-import neutral from "/public/img/neutral.svg";
-import happy from "/public/img/happy.svg";
-import veryHappy from "/public/img/veryhappy.svg";
+import bg01 from "../../public/img/BG01.svg";
+import arrow from "../../public/img/arrow.svg";
+import unhappy from "../../public/img/unhappy.svg";
+import neutral from "../../public/img/neutral.svg";
+import happy from "../../public/img/happy.svg";
+import veryHappy from "../../public/img/veryhappy.svg";
 
 import { nextBtnText } from "@/constants";
 import { headFeel1 } from "@/constants";

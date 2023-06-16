@@ -10,17 +10,17 @@ import { headText1 } from "../constants";
 import { headText2 } from "../constants";
 
 //-------------------image-----------------------//
-import festLogo from "/public/img/LOGO.svg";
-import spon1 from "/public/img/spon1.svg";
-import spon2 from "/public/img/spon2.svg";
-import spon3 from "/public/img/spon3.svg";
-import line from "/public/img/เส้นคั่น.svg";
-import birds from "/public/img/birds.svg";
-import bgWhite from "/public/img/bg-white.svg";
-import human from "/public/img/human.svg";
-import breeze from "/public/img/breeze.svg";
-import cloud1 from "/public/img/cloud1.svg";
-import cloud2 from "/public/img/cloud2.svg";
+import festLogo from "../../public/img/LOGO.svg";
+import spon1 from "../../public/img/spon1.svg";
+import spon2 from "../../public/img/spon2.svg";
+import spon3 from "../../public/img/spon3.svg";
+import line from "../../public/img/เส้นคั่น.svg";
+import birds from "../../public/img/birds.svg";
+import bgWhite from "../../public/img/bg-white.svg";
+import human from "../../public/img/human.svg";
+import breeze from "../../public/img/breeze.svg";
+import cloud1 from "../../public/img/cloud1.svg";
+import cloud2 from "../../public/img/cloud2.svg";
 //----------------------------------------------//
 
 export default function Home() {

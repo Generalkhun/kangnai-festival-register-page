@@ -10,10 +10,10 @@ import { introText1 } from "@/constants";
 import { introText2 } from "@/constants";
 
 //-------------------image-----------------------//
-import introHead from "/public/img/intro-head.svg";
-import vol1 from "/public/img/vol1.svg";
-import bg02 from "/public/img/BG02.svg";
-import arrow from "/public/img/arrow.svg";
+import introHead from "../../public/img/intro-head.svg";
+import vol1 from "../../public/img/vol1.svg";
+import bg02 from "../../public/img/BG02.svg";
+import arrow from "../../public/img/arrow.svg";
 //----------------------------------------------//
 
 type Props = {};
