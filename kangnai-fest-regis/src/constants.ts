@@ -84,3 +84,6 @@ export const cardContentCreator = (
       return "";
   }
 };
+
+export const loadText1 = "ความพังเป็นส่วนหนึ่งของการเติบโต";
+export const loadText2 = "อย่ากลัวที่จะแวะทักทายเขาบ่อย ๆ";

@@ -49,6 +49,11 @@
   animation: loaderAnimation 3s linear forwards;
 }
 
+.loading-text {
+  color: #4b9199;
+  font-weight: 500px;
+}
+
 @keyframes loaderAnimation {
   0% {
     width: 0;

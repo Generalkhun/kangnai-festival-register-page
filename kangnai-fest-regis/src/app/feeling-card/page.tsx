@@ -25,7 +25,7 @@ import quality17 from "public/img/quality17.svg";
 import quality18 from "public/img/quality18.svg";
 import Image from "next/image";
 import "./page.css";
-import { cardContentCreator } from "@/constants";
+import { cardContentCreator, loadText1, loadText2 } from "@/constants";
 
 const index = () => {
   const [isLoading, setIsLoading] = useState<boolean>(true);
@@ -81,7 +81,7 @@ const index = () => {
     }
     const timer = setTimeout(() => {
       setIsLoading(false);
-    }, 3000);
+    }, 30000);
     //random a card
     setCardNumber(Math.ceil(Math.random() * 18));
     //random a card's content
@@ -111,8 +111,8 @@ const index = () => {
                 left: "105.5px",
               }}
             >
-              <div>ความพังเป็นส่วนหนึ่งของการเติบโต</div>
-              <div>อย่ากลัวที่จะแวะทักทายเขาบ่อย ๆ</div>
+              <div className="loading-text">{loadText1}</div>
+              <div className="loading-text">{loadText2}</div>
             </div>
             <div className="loader-bar" />
           </div>
