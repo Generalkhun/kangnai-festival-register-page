@@ -4,7 +4,7 @@ import { GoogleAuthOptions } from "google-auth-library";
 import { values } from "lodash";
 
 /**@todo use generated key file on production (GOOGLE_SHEET_KEYFILE_PATH) instead of the one from local secrets */
-//const GOOGLE_SHEET_KEYFILE_PATH = '/tmp/googleSheetKeyFile.json'
+const GOOGLE_SHEET_KEYFILE_PATH = '/tmp/googleSheetKeyFile.json'
 const SHEET_RANGE_ADD = 'MainPage!A1:G' // used to append a record
 
 // This funtion is to connect googlesheet api
@@ -21,21 +21,21 @@ const connectGoogleSheetsApi = async () => {
     return sheets
 }
 
-// const singleObjJsonFileGenerator = async (obj: Object, path: string) => {
-//     const json = JSON.stringify(obj);
-//     try {
-//         await fsp.writeFile(path, json);
-//     } catch (error) {
-//         throw new Error(error as string)
-//     }
-// }
+const singleObjJsonFileGenerator = async (obj: Object, path: string) => {
+    const json = JSON.stringify(obj);
+    try {
+        await fsp.writeFile(path, json);
+    } catch (error) {
+        throw new Error(error as string)
+    }
+}
 
 const getGoogleSheetAuthConfig = async () => {
-    // const ggSheetCredential = JSON.parse(
-    //     Buffer.from(process.env.GG_SHEET_KEY_BASE64 || '', "base64").toString()
-    // );
+    const ggSheetCredential = JSON.parse(
+        Buffer.from(process.env.GG_SHEET_KEY_BASE64 || '', "base64").toString()
+    );
     //generate a json file to store a keyfile
-    //await singleObjJsonFileGenerator(ggSheetCredential, GOOGLE_SHEET_KEYFILE_PATH);
+    await singleObjJsonFileGenerator(ggSheetCredential, GOOGLE_SHEET_KEYFILE_PATH);
     // google sheets
     const GOOGLE_SHEET_AUTH_CONFIG: GoogleAuthOptions = {
         //scopes: ['https://www.googleapis.com/auth/spreadsheets.readonly'],
@@ -44,10 +44,7 @@ const getGoogleSheetAuthConfig = async () => {
          * @note keyfile from secrets folder local test.
          * Use keyfile from generated one instead on the production with keys from the env vars
         */
-
-        /**@todo remove this one on prod, use GOOGLE_SHEET_KEYFILE_PATH instead */
-        keyFile: './secrets/googleSheetKeyFile.json',
-        //keyFile: GOOGLE_SHEET_KEYFILE_PATH,
+        keyFile: GOOGLE_SHEET_KEYFILE_PATH,
     }
     return GOOGLE_SHEET_AUTH_CONFIG;
 }
@@ -68,9 +65,7 @@ export const saveFormToGGSheet = async (formData: any) => {
 
     // request 
     const request = {
-        //spreadsheetId: process.env.SHEET_ID,
-        /**@todo move this sheet id to process env. */
-        spreadsheetId: "1Ut74ukr1upU8Vk7-ClqWb2UHcWqJTByP2lScqjOhk68",
+        spreadsheetId: process.env.SHEET_ID,
         range: SHEET_RANGE_ADD,
         valueInputOption: 'USER_ENTERED',
         insertDataOption: 'INSERT_ROWS',
