@@ -1,0 +1,148 @@
+.regisform-container {
+  position: absolute;
+  top: 248px;
+  left: 40px;
+  color: #838aa3;
+  line-height: 30px;
+  font-weight: 600;
+}
+
+.checkbox-container {
+  position: relative;
+  top: -5px;
+  left: -8px;
+}
+
+.check01 {
+  margin-right: 10px;
+  margin-left: 0px;
+
+  width: 1.3em;
+  height: 1.3em;
+  background-color: white;
+  border-radius: 50%;
+  vertical-align: middle;
+  border: 1px solid #ddd;
+  appearance: none;
+  -webkit-appearance: none;
+  outline: none;
+  cursor: pointer;
+}
+
+.gender_pick {
+  margin-right: 20px;
+}
+
+.check01:first-child {
+  margin-left: 10px;
+}
+
+.check01:checked {
+  background-color: #50a5ae;
+  border-color: #ffff;
+  outline: 3px solid #50a5ae;
+}
+
+.form_age {
+  color: #838aa3;
+  background-color: #fff;
+  width: 348px;
+  height: 56px;
+
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+
+  padding: 16px 20px;
+  margin-bottom: 16px;
+  gap: 8px;
+  border-radius: 8px;
+  border-style: none;
+  font-size: 16px;
+}
+
+#form_how {
+  color: #838aa3;
+
+  width: 348px;
+  height: 56px;
+
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+
+  margin-bottom: 16px;
+  padding: 16px 20px;
+  gap: 8px;
+  border-radius: 8px;
+  border-style: none;
+  font-size: 16px;
+}
+
+#form_feel {
+  color: #838aa3;
+
+  width: 348px;
+  height: 56px;
+
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+
+  margin-bottom: 16px;
+  padding: 16px 20px;
+  gap: 8px;
+  border-radius: 8px;
+  border-style: none;
+  font-size: 16px;
+}
+
+select {
+  appearance: none;
+}
+
+.select-select::after {
+  position: absolute;
+  content: "";
+  top: 14px;
+  right: 10px;
+  width: 0;
+  height: 0;
+  border: 6px solid transparent;
+  border-color: #fff transparent transparent transparent;
+}
+
+.select-items div,
+.select-selected {
+  color: #ffffff;
+  padding: 8px 16px;
+  border: 1px solid transparent;
+  border-color: transparent transparent rgba(0, 0, 0, 0.1) transparent;
+  cursor: pointer;
+}
+
+#dropIcon {
+  position: absolute;
+  top: 112px;
+  right: 24.5px;
+}
+
+#dropIcon2 {
+  position: absolute;
+  top: 214px;
+  right: 24.5px;
+}
+
+#dropIcon3 {
+  position: absolute;
+  top: 315px;
+  right: 24.5px;
+}
+
+.custom-age option {
+  position: relative;
+  display: inline-block;
+}

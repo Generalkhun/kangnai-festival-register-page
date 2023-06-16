@@ -1,0 +1,119 @@
+@import url("https://fonts.googleapis.com/css2?family=Athiti:wght@400;500;600&display=swap");
+
+* {
+  margin: 0;
+}
+
+.home-container {
+  background-color: #d2eef2;
+  position: absolute;
+  width: 100%;
+  min-width: 428px;
+  height: 100%;
+  min-height: 926px;
+  align-items: center;
+}
+
+.body-container {
+  color: #4b9199;
+  font-style: normal;
+  line-height: 51px;
+  text-align: center;
+  margin-bottom: 20px;
+  position: absolute;
+  top: 585px;
+  left: 67px;
+}
+
+.body-container h2 {
+  line-height: 20px;
+  font-size: 32px;
+  font-weight: 500;
+}
+
+.body-container h3 {
+  font-size: 24px;
+  font-weight: 500;
+}
+
+#festLogo {
+  position: fixed;
+  position: absolute;
+  top: 49px;
+  align-items: center;
+  height: 450px;
+  width: auto;
+}
+
+#grad-blue {
+  position: absolute;
+  top: 0px;
+  background: linear-gradient(180deg, #b7eaf1 0%, #d2eef2 100%);
+}
+
+#bg-white {
+  position: absolute;
+  top: 350px;
+  width: 428px;
+}
+
+#human {
+  position: absolute;
+  top: 386px;
+  left: 165px;
+}
+
+#cloud1 {
+  position: absolute;
+  top: 25px;
+  width: auto;
+  height: 118px;
+}
+
+#cloud2 {
+  position: absolute;
+  right: 0;
+  top: 300px;
+}
+
+#breeze {
+  position: absolute;
+  right: 0;
+  top: 62.44px;
+}
+
+#birds {
+  position: absolute;
+  left: 340px;
+  top: 171px;
+}
+
+.btn-container {
+  position: absolute;
+  align-items: center;
+  top: 685px;
+}
+
+.foot-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  padding: 0px;
+  gap: 16px;
+  position: absolute;
+  align-items: center;
+  left: 106px;
+  top: 830px;
+}
+
+.foot-container li {
+  list-style: none;
+}
+
+.list-spon1,
+.list-spon2,
+.list-spon3 {
+  width: 48px;
+  height: 48px;
+}
