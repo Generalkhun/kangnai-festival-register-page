@@ -127,19 +127,19 @@ select {
 
 #dropIcon {
   position: absolute;
-  top: 112px;
+  top: 214px;
   right: 24.5px;
 }
 
 #dropIcon2 {
   position: absolute;
-  top: 214px;
+  top: 315px;
   right: 24.5px;
 }
 
 #dropIcon3 {
   position: absolute;
-  top: 315px;
+  top: 416px;
   right: 24.5px;
 }
 
