@@ -4,7 +4,7 @@ import Link from "next/link";
 import React, { useCallback, useState } from "react";
 import Image from "next/image";
 import "./page.css";
-import bg01 from "../../public/img/BG01.svg";
+import bg01 from "../../public/img/bg01.svg";
 import underliner from "../../public/img/underliner.svg";
 import { emotionalPageHeaderSubText, emotionalPageHeaderText1, emotionalPageHeaderText2, emotionalPageHeaderText3, emotionalPageHeaderText4, emotionWords } from "@/constants";
 import { EmotionCircle } from "@/components/EmotionCircle";
