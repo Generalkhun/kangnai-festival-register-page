@@ -10,13 +10,13 @@
   z-index: 9; /* Adjust the z-index as needed */
   pointer-events: none;
 }
-.page-container {
+.emotional-check-page-container {
   background-color: #d2eef2;
   position: absolute;
   width: 100%;
   height: 100%;
-  max-width: 428px;
-  max-height: 926px;
+  min-width: 428px;
+  min-height: 926px;
   align-items: center;
   overflow: hidden;
   overflow: scroll;
@@ -35,7 +35,7 @@
     right: 89.97px;
   }
   
-.text-container {
+.emotional-check-page-container-text-container {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -43,7 +43,7 @@
   position: absolute;
   width: 373px;
   height: 124px;
-  left: calc(50% - 373px / 2 + 0.5px);
+  left: 29px;
   top: 137px;
 }
 

@@ -11,7 +11,7 @@ import { FormRegisData } from "@/types/formData";
 import axios from 'axios'
 import Link from "next/link";
 import Image from "next/image";
-import React, { useEffect, useState } from "react";
+import React, { useCallback, useEffect, useState } from "react";
 import "./page.css";
 import RegisForm from "@/components/Form/form";
 import { IntroducePage } from "@/components/IntroducePage";
@@ -34,12 +34,12 @@ const Page = () => {
     const regisAs = window.localStorage.getItem("regisAs")
     setIsWalkin(regisAs === "walk-in" ? true : false)
   })
-  const onFormDataChange = (updatedFormData: Record<any, any>) => {
+  const onFormDataChange = useCallback((updatedFormData: Record<any, any>) => {
     setFormData((prev: FormRegisData) => ({
       ...prev,
       ...updatedFormData,
     }))
-  }
+  }, [setFormData])
   const onSubmitRegisForm = (e: React.MouseEvent<HTMLButtonElement>) => {
     setDisableSubmit(true)
     var tzoffset = (new Date()).getTimezoneOffset() * 60000; //offset in milliseconds
@@ -104,9 +104,9 @@ const Page = () => {
           <h2>{headRegis}</h2>
         </div>
       </div>
-      :
-      <IntroducePage/>
-    }
+        :
+        <IntroducePage />
+      }
     </div>
   );
 };

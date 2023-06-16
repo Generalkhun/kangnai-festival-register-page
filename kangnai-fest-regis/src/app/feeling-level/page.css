@@ -10,12 +10,12 @@
   align-items: center;
 }
 
-.text-container {
+.feeling-level-text-container {
   text-align: center;
   top: 131px;
 }
 
-.text-container #head1 {
+.feeling-level-text-container #head1 {
   position: fixed;
   color: #bf83cb;
   font-size: 32px;
@@ -24,7 +24,7 @@
   left: 170px;
 }
 
-.text-container #head2 {
+.feeling-level-text-container #head2 {
   position: fixed;
   color: #4b9199;
   font-size: 32px;
@@ -33,7 +33,7 @@
   left: 80px;
 }
 
-.text-container #head3 {
+.feeling-level-text-container #head3 {
   position: fixed;
   color: #bf83cb;
   font-size: 32px;
@@ -42,7 +42,7 @@
   left: 132px;
 }
 
-.text-container #feel1 {
+.feeling-level-text-container #feel1 {
   color: #838aa3;
   position: absolute;
   font-size: 16px;
@@ -51,7 +51,7 @@
   left: 40px;
 }
 
-.text-container #feel2 {
+.feeling-level-text-container #feel2 {
   color: #838aa3;
   position: absolute;
   font-size: 16px;

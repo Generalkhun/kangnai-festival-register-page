@@ -3,12 +3,12 @@
 }
 
 .regis-container {
-  position: fixed;
+  position: relative;
   width: 100%;
   height: 100%;
-  max-width: 428px;
-  max-height: 926px;
-  align-items: center;
+  min-width: 428px;
+  min-height: 926px;
+  overflow: scroll;
 }
 
 .text-container {
@@ -40,7 +40,7 @@
 
 .nextBtn-container {
   position: absolute;
-  bottom: 10%;
+  bottom:5%;
 }
 
 #arrow {

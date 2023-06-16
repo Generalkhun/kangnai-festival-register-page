@@ -27,7 +27,7 @@ export const IntroducePage = () => {
         <Image id="vol1" src={vol1} alt="vol.1" />
         <Image id="intro-head" src={introHead} alt="introduce head" />
 
-        <div className="text-container">
+        <div className="intro-text-container">
           <h2>{introText1}</h2>
           <br />
           <h3>{introText2}</h3>

@@ -21,34 +21,45 @@ const RegisForm = function ({ onFormDataChange, isWalkin }: RegisFormProps) {
   // form data update
   useEffect(() => {
     onFormDataChange({ name })
-  }, [name,onFormDataChange])
+  }, [name, onFormDataChange])
   useEffect(() => {
     onFormDataChange({ age: selectedAge })
-  }, [selectedAge,onFormDataChange])
+  }, [selectedAge, onFormDataChange])
   useEffect(() => {
     onFormDataChange({ howDidYouFindUs: selectedHow })
-  }, [selectedHow,onFormDataChange])
+  }, [selectedHow, onFormDataChange])
   useEffect(() => {
     onFormDataChange({ whatIsYourInterested: selectedInterested })
-  }, [selectedInterested,onFormDataChange])
+  }, [selectedInterested, onFormDataChange])
   useEffect(() => {
     onFormDataChange({ gender })
-  }, [gender,onFormDataChange])
+  }, [gender, onFormDataChange])
   const openHandler = () => {
     setIsOpened((isOpened) => !isOpened);
   };
 
   return (
     <div className="regisform-container">
-      {!isWalkin && <p>กรุณากรอกชื่อที่ใช้ลงทะเบียน</p>}
-      <label className="name" htmlFor="name">
-        ชื่อ
-      </label>
+      <div style={{
+        fontWeight: '600px',
+        fontSize: '16px',
+      }}>
+        {!isWalkin ? "กรุณากรอกชื่อตามที่ได้ลงทะเบียนมาล่วงหน้า" : "ชื่อ"}
+      </div>
       <input
+      style={{
+        width: '348px',
+        height: '58px',
+        borderRadius: '8px',
+        fontSize: '16px',
+        borderStyle: 'none'
+      }}
+        placeholder="กรอกชื่อที่ลงทะเบียนล่วงหน้า"
         className="name-input"
         type="text"
         onChange={(e) => setName(e.target.value)}
       />
+      <div></div>
       {isWalkin && <>
         <label className="gender" htmlFor="gender">
           เพศ

@@ -5,6 +5,7 @@
   color: #838aa3;
   line-height: 30px;
   font-weight: 600;
+  overflow: scroll;
 }
 
 .checkbox-container {

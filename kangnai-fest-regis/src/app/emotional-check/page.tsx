@@ -37,7 +37,7 @@ const Page = () => {
         window.localStorage.setItem("selectedEmotionWord",selectedEmotionWord)
     }
     return (
-        <div className={"page-container"}>
+        <div className={"emotional-check-page-container"}>
             <div className={isShowCustomEmotionModal ? 'backdrop' : undefined}></div>
             {renderCustomEmotionModal()}
             <Image id="bg01" src={bg01} alt="bg-02" />
@@ -48,7 +48,7 @@ const Page = () => {
             }}>
                 <Image id="underliner" src={underliner} alt="underliner" />
             </div>
-            <div className="text-container">
+            <div className="emotional-check-page-container-text-container">
                 <div className="text">
                     <span>
                         {emotionalPageHeaderText1}
