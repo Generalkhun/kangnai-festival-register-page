@@ -78,7 +78,7 @@
   height: 100%;
 }
 
-#emo-happy {
+.emo-container {
   position: absolute;
   top: 280.97px;
   left: 151.04px;
