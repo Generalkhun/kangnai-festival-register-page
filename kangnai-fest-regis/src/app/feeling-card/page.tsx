@@ -23,7 +23,6 @@ import quality15 from "public/img/quality15.svg"
 import quality16 from "public/img/quality16.svg"
 import quality17 from "public/img/quality17.svg"
 import quality18 from "public/img/quality18.svg"
-import whiteunderliner from "public/img/whiteunderliner.svg";
 import Image from "next/image";
 import './page.css'
 import { cardContentCreator } from '@/constants';
@@ -134,16 +133,9 @@ const Page = () => {
                     {renderCard(cardNumber)}
                     <div style={{
                         position: "absolute",
-                        top: "620px",
-                        left: "5px",
-                        padding: "0px 90px",
-                        textAlign: "center",
-                        fontWeight: "600px",
-                        fontSize: "20px",
-                        lineHeight: "30px",
+                        top: "629px",
+                        left: "50px"
                     }}>
-                        <Image id="underline" src={whiteunderliner} alt="underline" />
-                        <br />
                         {cardContent}
                     </div>
                     <Link href={'/'}>
