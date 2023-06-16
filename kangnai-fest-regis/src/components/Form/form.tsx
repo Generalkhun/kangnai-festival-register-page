@@ -54,7 +54,7 @@ const RegisForm = function ({ onFormDataChange, isWalkin }: RegisFormProps) {
         fontSize: '16px',
         borderStyle: 'none'
       }}
-        placeholder="กรอกชื่อที่ลงทะเบียนล่วงหน้า"
+        placeholder= {!isWalkin ? "กรุณากรอกชื่อตามที่ได้ลงทะเบียนมาล่วงหน้า" : "ชื่อ"}
         className="name-input"
         type="text"
         onChange={(e) => setName(e.target.value)}
