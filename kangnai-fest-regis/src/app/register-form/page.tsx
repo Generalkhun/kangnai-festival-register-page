@@ -52,9 +52,8 @@ const Page = () => {
         timestamp: localISOTime,
       })
       .then(res => {
-        console.log("🚀 ~ file: page.tsx:59 ~ onSubmitRegisForm ~ res:", res)
         setDisableSubmit(false)
-        router.push('/introduce');
+        typeof window !== 'undefined' && router.push('/introduce');
       })
       .catch(err => {
         console.log(err.message);
