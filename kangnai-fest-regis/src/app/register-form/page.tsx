@@ -96,8 +96,10 @@ const Page = () => {
         </div>
         <div className="nextBtn-container">
           <Link href={"/introduce"}>
-            <NextButton isDisabled={disableSubmit} onClick={(e: React.MouseEvent<HTMLButtonElement>) => onSubmitRegisForm(e)} buttonText={nextBtnText} />
-            <Image id="arrow" src={arrow} alt="arrow" />
+            <a href={"/introduce"}>
+              <NextButton isDisabled={disableSubmit} onClick={(e: React.MouseEvent<HTMLButtonElement>) => onSubmitRegisForm(e)} buttonText={nextBtnText} />
+              <Image id="arrow" src={arrow} alt="arrow" />
+            </a>
           </Link>
         </div>
         <div className="text-container">
