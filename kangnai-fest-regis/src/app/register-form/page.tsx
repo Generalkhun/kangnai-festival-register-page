@@ -41,7 +41,7 @@ const Page = () => {
     }))
   }
   const onSubmitRegisForm = () => {
-    //typeof window !== 'undefined' && router.push('/introduce-vol.1');
+    
     setDisableSubmit(true)
     var tzoffset = (new Date()).getTimezoneOffset() * 60000; //offset in milliseconds
     var localISOTime = (new Date(Date.now() - tzoffset)).toISOString().slice(0, -1)
@@ -53,6 +53,7 @@ const Page = () => {
       })
       .then(res => {
         setDisableSubmit(false)
+        typeof window !== 'undefined' && router.push('/introduceVol1');
       })
       .catch(err => {
         console.log(err.message);
