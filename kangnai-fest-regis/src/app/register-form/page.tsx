@@ -1,6 +1,7 @@
 "use client";
 
 import { NextButton } from "@/components/Button/button";
+import { useRouter } from 'next/navigation'
 import { headRegis, nextBtnText } from "@/constants";
 
 import bg01 from "/public/img/bg01.svg";
@@ -17,7 +18,7 @@ import RegisForm from "@/components/Form/form";
 
 const Page = () => {
   const [disableSubmit, setDisableSubmit] = useState<boolean>(false)
-
+  const router = useRouter()
   const [formData, setFormData] = useState<FormRegisData>({
     timestamp: '',
     id: '',
@@ -40,6 +41,7 @@ const Page = () => {
     }))
   }
   const onSubmitRegisForm = () => {
+    router.push('/feeling-level');
     setDisableSubmit(true)
     var tzoffset = (new Date()).getTimezoneOffset() * 60000; //offset in milliseconds
     var localISOTime = (new Date(Date.now() - tzoffset)).toISOString().slice(0, -1)
