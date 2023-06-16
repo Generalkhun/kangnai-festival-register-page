@@ -11,11 +11,11 @@ interface NextButtonProps {
   onClick?: () => unknown
   isDisabled?: boolean
 }
-export const ProceedingButton = ({ buttonText,onClick }: Props) => {
+export const ProceedingButton = ({ buttonText, onClick }: Props) => {
   return <button onClick={onClick} className="proceeding_btn">{buttonText}</button>;
 };
 
-export const WalkInButton = ({ buttonText,onClick }: Props) => {
+export const WalkInButton = ({ buttonText, onClick }: Props) => {
   return <button onClick={onClick} className="walkin_btn">{buttonText}</button>;
 };
 

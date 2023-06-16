@@ -35,6 +35,9 @@ const index = (props: Props) => {
         setSelectedEmotionWord,
         addCustomEmotionWord,
     })
+    const onProceed = () => {
+        window.localStorage.setItem("selectedEmotionWord",selectedEmotionWord)
+    }
     return (
         <div className={"page-container"}>
             <div className={isShowCustomEmotionModal ? 'backdrop' : undefined}></div>
@@ -93,7 +96,7 @@ const index = (props: Props) => {
             </div>
             <div className='proceeding-btn-container'>
                 {!!selectedEmotionWord.length && <Link href={"/feeling-card"}>
-                    <ProceedingButton buttonText={`ต่อไป`} />
+                    <ProceedingButton onClick={onProceed} buttonText={`ต่อไป`} />
                 </Link>}
             </div>
 
