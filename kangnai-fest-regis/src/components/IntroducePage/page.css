@@ -21,6 +21,7 @@
   text-align: center;
   align-items: center;
   padding-right: 480px;
+  width: 405px;
 
   color: #4b9199;
   top: 307px;
@@ -58,13 +59,13 @@
   height: 100%;
 }
 
-.nextBtn-container {
+.intro-nextBtn-container {
   position: absolute;
   bottom: 5%;
 }
 
-#arrow {
+#intro-arrow {
   position: absolute;
   top: 20px;
-  left: 280px;
+  left: 290px;
 }

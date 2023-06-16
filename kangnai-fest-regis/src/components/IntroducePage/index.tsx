@@ -32,10 +32,10 @@ export const IntroducePage = () => {
           <br />
           <h3>{introText2}</h3>
         </div>
-        <div className="nextBtn-container">
+        <div className="intro-nextBtn-container">
           <Link href={"/feeling-level"}>
             <NextButton buttonText={introBtnText} />
-            <Image id="arrow" src={arrow} alt="arrow" />
+            <Image id="intro-arrow" src={arrow} alt="arrow" />
           </Link>
         </div>
       </div>

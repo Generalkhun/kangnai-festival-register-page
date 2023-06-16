@@ -154,7 +154,7 @@ const Page = () => {
                             style={{
                                 position: "absolute",
                                 top: "806px",
-                                left: "26%",
+                                left: '180px',
                                 width: "64px",
                                 height: "64px",
                                 borderRadius: "50%",
