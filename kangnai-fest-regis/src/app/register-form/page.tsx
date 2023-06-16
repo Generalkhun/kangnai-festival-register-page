@@ -3,8 +3,8 @@
 import { NextButton } from "@/components/Button/button";
 import { headRegis, nextBtnText } from "@/constants";
 
-import bg01 from "../../public/img/bg01.svg";
-import arrow from "../../public/img/arrow.svg";
+import bg01 from "/public/img/bg01.svg";
+import arrow from "/public/img/arrow.svg";
 import miniLogo from "public/img/miniLogo.svg";
 
 import { FormRegisData } from "@/types/formData";

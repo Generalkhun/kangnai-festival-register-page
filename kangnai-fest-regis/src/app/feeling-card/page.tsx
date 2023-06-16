@@ -1,8 +1,8 @@
 "use client";
 import Link from 'next/link'
 import React, { useEffect, useState } from 'react'
-import homeIcon from '../../public/img/home.svg';
-import bg01 from "../../public/img/bg01.svg";
+import homeIcon from '/public/img/home.svg';
+import bg01 from "/public/img/bg01.svg";
 import miniLogo from "public/img/miniLogo.svg";
 import quality_card from "public/img/quality_card.svg"
 import quality01 from "public/img/quality01.svg"

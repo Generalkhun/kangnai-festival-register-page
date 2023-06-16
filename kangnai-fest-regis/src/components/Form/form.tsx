@@ -3,7 +3,7 @@ import Image from "next/image";
 import "./form.css";
 import { useState } from "react";
 
-import dropIcon from "../../public/img/dropIcon.svg";
+import dropIcon from "/public/img/dropIcon.svg";
 import CustomForm from "../FormCustom/formCustom";
 interface RegisFormProps {
   onFormDataChange: (updatedFormData: Record<any, any>) => void;
