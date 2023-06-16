@@ -53,7 +53,6 @@ const Page = () => {
       })
       .then(res => {
         setDisableSubmit(false)
-        typeof window !== 'undefined' && router.push('/introduceVol1');
       })
       .catch(err => {
         console.log(err.message);
@@ -98,7 +97,7 @@ const Page = () => {
           <RegisForm isWalkin={isWalkin} onFormDataChange={onFormDataChange} />
         </div>
         <div className="nextBtn-container">
-          <Link href={"/introduceVol1"}>
+          <Link href={"/introduce"}>
             <NextButton isDisabled={disableSubmit} onClick={onSubmitRegisForm} buttonText={nextBtnText} />
             <Image id="arrow" src={arrow} alt="arrow" />
           </Link>

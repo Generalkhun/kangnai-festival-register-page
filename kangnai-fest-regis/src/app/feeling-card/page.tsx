@@ -139,26 +139,26 @@ const Page = () => {
                         {cardContent}
                     </div>
                     <Link href={'/'}>
-                        <button>done (back)</button>
+                        <button
+                            style={{
+                                position: "absolute",
+                                top: '806px',
+                                left: '43%',
+                                width: '64px',
+                                height: '64px',
+                                borderRadius: '50%',
+                                backgroundColor: '#fff',
+                                border: 'none',
+                                cursor: 'pointer',
+                                display: 'flex',
+                                justifyContent: 'center',
+                                alignItems: 'center',
+                            }}
+                        >
+                            <Image src={homeIcon} style={{ width: '24px', height: '24px' }} alt="home" />
+                        </button>
                     </Link>
-                    <button
-                        style={{
-                            position:"absolute",
-                            top: '806px',
-                            left: '43%',
-                            width: '64px',
-                            height: '64px',
-                            borderRadius: '50%',
-                            backgroundColor: '#fff',
-                            border: 'none',
-                            cursor: 'pointer',
-                            display: 'flex',
-                            justifyContent: 'center',
-                            alignItems: 'center',
-                        }}
-                    >
-                        <Image src={homeIcon} style={{ width: '24px', height: '24px' }} alt="home" />
-                    </button>
+
                 </div>}
 
 
