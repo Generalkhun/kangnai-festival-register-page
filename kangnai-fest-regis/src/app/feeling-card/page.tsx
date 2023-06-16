@@ -26,6 +26,7 @@ import quality18 from "public/img/quality18.svg"
 import Image from "next/image";
 import './page.css'
 import { cardContentCreator } from '@/constants';
+import whiteUnderline from "public/img/white_underline.svg"
 
 
 const Page = () => {
@@ -81,23 +82,25 @@ const Page = () => {
             setIsLoading(false)
             return;
         }
-        const timer = setTimeout(() => {
-            setIsLoading(false)
-        }, 3000)
-        //random a card
-        setCardNumber(Math.ceil(Math.random() * 18))
         //random a card's content
         const selectedEmotionWord = window.localStorage.getItem("selectedEmotionWord") || ""
 
         const content = cardContentCreator(selectedEmotionWord, Math.ceil(Math.random() * 14))
-        setCardContent(content)
+        const timer = setTimeout(() => {
+            setIsLoading(false)
+            setCardContent(content)
+            //random a card
+            setCardNumber(Math.ceil(Math.random() * 18))
+        }, 5000)
+
+
         return () => {
             clearTimeout(timer);
         };
     }, [cardNumber, cardContent])
     return (
         <div>
-            <div className="page-container">
+            <div className="feeling-card-page-container">
                 <Image id="bg01" src={bg01} alt="bg-01" />
                 <Image id="miniLogo" src={miniLogo} alt="mini logo" />
                 {isLoading &&
@@ -124,8 +127,8 @@ const Page = () => {
                     top: '174px',
                     left: '105.5px'
                 }}>
-                    <div>ขอบคุณสำหรับความพังที่แชร์ให้กัน</div>
-                    <div>เราขอมอบสิ่งนี้ให้คุณ</div>
+                    <div className="headCard-text">ขอบคุณสำหรับความพังที่แชร์ให้กัน</div>
+                    <div className="headCard-text">เราขอมอบสิ่งนี้ให้คุณ</div>
                 </div>}
 
                 {!isLoading && <div>
@@ -133,26 +136,34 @@ const Page = () => {
                     {renderCard(cardNumber)}
                     <div style={{
                         position: "absolute",
-                        top: "629px",
-                        left: "50px"
+                        top: "620px",
+                        left: "5px",
+                        padding: "0px 90px",
+                        textAlign: "center",
+                        fontWeight: "600px",
+                        fontSize: "20px",
+                        lineHeight: "30px",
+                        maxWidth: "250px",
                     }}>
+                        <Image id="underline" src={whiteUnderline} alt="underline" />
+                        <br />
                         {cardContent}
                     </div>
                     <Link href={'/'}>
                         <button
                             style={{
                                 position: "absolute",
-                                top: '806px',
-                                left: '43%',
-                                width: '64px',
-                                height: '64px',
-                                borderRadius: '50%',
-                                backgroundColor: '#fff',
-                                border: 'none',
-                                cursor: 'pointer',
-                                display: 'flex',
-                                justifyContent: 'center',
-                                alignItems: 'center',
+                                top: "806px",
+                                left: "26%",
+                                width: "64px",
+                                height: "64px",
+                                borderRadius: "50%",
+                                backgroundColor: "#fff",
+                                border: "none",
+                                cursor: "pointer",
+                                display: "flex",
+                                justifyContent: "center",
+                                alignItems: "center",
                             }}
                         >
                             <Image src={homeIcon} style={{ width: '24px', height: '24px' }} alt="home" />

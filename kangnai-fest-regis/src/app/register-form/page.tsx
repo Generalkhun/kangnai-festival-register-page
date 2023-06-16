@@ -19,6 +19,7 @@ import { IntroducePage } from "@/components/IntroducePage";
 const Page = () => {
   const [isShowIntro, setIsShowIntro] = useState<boolean>(false)
   const [disableSubmit, setDisableSubmit] = useState<boolean>(false)
+  const [showSuccessRibbon,setShowSuccessRibbon] = useState<boolean>(false)
   const [formData, setFormData] = useState<FormRegisData>({
     timestamp: '',
     id: '',
@@ -42,6 +43,13 @@ const Page = () => {
   }, [setFormData])
   const onSubmitRegisForm = (e: React.MouseEvent<HTMLButtonElement>) => {
     setDisableSubmit(true)
+    setTimeout(() => {
+      setShowSuccessRibbon(true)
+    },1000)
+    setTimeout(() => {
+      setIsShowIntro(true)
+      setShowSuccessRibbon(false)
+    },2000)
     var tzoffset = (new Date()).getTimezoneOffset() * 60000; //offset in milliseconds
     var localISOTime = (new Date(Date.now() - tzoffset)).toISOString().slice(0, -1)
     axios
@@ -52,7 +60,6 @@ const Page = () => {
       })
       .then(res => {
         setDisableSubmit(false)
-        setIsShowIntro(true)
       })
       .catch(err => {
         console.log(err.message);
@@ -89,6 +96,9 @@ const Page = () => {
 
   return (
     <div>
+      {showSuccessRibbon && <div className="success-notification">
+        Register success
+      </div> }
       {!isShowIntro ? <div className="regis-container">
         <Image id="bg01" src={bg01} alt="bg-01" />
         <Image id="miniLogo" src={miniLogo} alt="mini logo" />

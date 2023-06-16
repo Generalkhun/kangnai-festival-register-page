@@ -28,13 +28,13 @@ const Page = () => {
         />
     ), [selectedEmotionWord, onSelectEmotion])
 
-    const { renderCustomEmotionModal,isShowCustomEmotionModal } = UseCustomEmotionModal({
+    const { renderCustomEmotionModal, isShowCustomEmotionModal } = UseCustomEmotionModal({
         selectedEmotionWord,
         setSelectedEmotionWord,
         addCustomEmotionWord,
     })
     const onProceed = () => {
-        window.localStorage.setItem("selectedEmotionWord",selectedEmotionWord)
+        window.localStorage.setItem("selectedEmotionWord", selectedEmotionWord)
     }
     return (
         <div className={"emotional-check-page-container"}>
@@ -70,10 +70,7 @@ const Page = () => {
 
             <div className="emotion-circle-container">
                 <div className="emotion-circle-rows-odd">
-                    {addedWord ? [addedWord, ...emotionWords.row1]
-                        .map((word: string) => renderEmotionCircle(word))
-                        : emotionWords.row1.map((word: string) => renderEmotionCircle(word))
-                    }
+                    {emotionWords.row1.map((word: string) => renderEmotionCircle(word))}
                 </div>
                 <div className="emotion-circle-rows-even">
                     {emotionWords.row2.map((word: string) => renderEmotionCircle(word))}
@@ -82,7 +79,13 @@ const Page = () => {
                     {emotionWords.row3.map((word: string) => renderEmotionCircle(word))}
                 </div>
                 <div className="emotion-circle-rows-even">
-                    {emotionWords.row4.map((word: string) => renderEmotionCircle(word))}
+                    {addedWord ? emotionWords.row4
+                        .map((word: string) => renderEmotionCircle(word))
+                        .concat(renderEmotionCircle(addedWord))
+                        :
+                        emotionWords.row4
+                            .map((word: string) => renderEmotionCircle(word))
+                    }
                 </div>
                 <div className="emotion-circle-rows-odd">
                     {

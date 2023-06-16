@@ -16,7 +16,7 @@
 }
 
 .feeling-level-text-container #head1 {
-  position: fixed;
+  position: absolute;
   color: #bf83cb;
   font-size: 32px;
   font-weight: 500;
@@ -25,7 +25,7 @@
 }
 
 .feeling-level-text-container #head2 {
-  position: fixed;
+  position: absolute;
   color: #4b9199;
   font-size: 32px;
   font-weight: 500;
@@ -34,7 +34,7 @@
 }
 
 .feeling-level-text-container #head3 {
-  position: fixed;
+  position: absolute;
   color: #bf83cb;
   font-size: 32px;
   font-weight: 500;
